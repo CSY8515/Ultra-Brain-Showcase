@@ -6,7 +6,7 @@
 |---|---|---|
 | 단일 바이너리 | 175,616 bytes, Clang 19.1.5 (`-Wall -Wextra -pedantic -Werror`), 경고 0 | SHA-256 `8bd1e8d41a30036df66f570221574fb398a92876b7428550eb4675b4d62f63be` |
 | Windows CI | 단위 테스트 **108/108 PASS** (24 + 84) · 실물 프로세스 체크 **4/4 PASS** (`--selftest` 14/14, `--resilience`, `--benchmark`, `--guards`) | GitHub Actions `windows-latest`, 원본 저장소(비공개) run 42997831414, commit `10680d5` |
-| Windows Sandbox 오프라인 | 네트워크 차단 상태에서 `--demo` · `--selftest` 14/14 · `--guards` **ALL PASS** | Owner 직접 확인 (2026-11-11) |
+| Windows Sandbox 오프라인 | 네트워크 차단 상태에서 `--demo` · `--selftest` 14/14 · `--guards` **ALL PASS** | Owner 직접 확인 및 아래 녹화 (2026-11-11) |
 
 - 로컬 호스트는 Smart App Control이 켜져 있어 서명 없는 EXE를 실행하지 않습니다. 실행 증거는 위 CI와 Sandbox입니다.
 - CI는 같은 소스 커밋에서 바이너리를 새로 빌드해 실행합니다. Sandbox는 위 SHA-256의 바이너리를 실행합니다.
@@ -58,7 +58,7 @@
 
 ## 실행 영상
 
-Windows Sandbox(네트워크 차단) 안에 C-Seed-0 패키지가 올라간 화면 — 실행 콘솔 장면은 포함되지 않음
+Windows Sandbox(네트워크 차단 설정) 안에서 C-Seed-0 바이너리가 실행되는 화면입니다.
 
-- [c-seed-0-sandbox-1.mp4](media/c-seed-0-sandbox-1.mp4) — 24.6초, `--demo` 추가 전 빌드
-- [c-seed-0-sandbox-2.mp4](media/c-seed-0-sandbox-2.mp4) — 38.7초, 현재 빌드
+- [c-seed-0-sandbox-1.mp4](media/c-seed-0-sandbox-1.mp4) — 24.6초, `--demo` 추가 전 빌드. 약 12초부터 콘솔에 `ALL 14/14 SUBSYSTEM CHECKS STRICTLY PASSED`, `MAIN P1 guards verified`, `OFFLINE RUN COMPLETE - ALL 14/14 + P1 GUARDS PASS`
+- [c-seed-0-sandbox-2.mp4](media/c-seed-0-sandbox-2.mp4) — 38.7초, 현재 빌드. 약 16초부터 콘솔에 TCC 데모 완료 줄(`DEMO COMPLETE`), `--selftest` 14/14, `--guards`, `OFFLINE RUN COMPLETE - TCC DEMO + ALL 14/14 + P1 GUARDS PASS`
