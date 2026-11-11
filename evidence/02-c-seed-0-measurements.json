@@ -1,0 +1,55 @@
+{
+  "executable_sha256": "4f93428a9946753b94922d26e88ef9d8fb66b25dc552fb0dfad5c5d01881d6e9",
+  "executable_bytes": 193536,
+  "host": "local Windows 11 host (Smart App Control On), not CI",
+  "command_text": "관제탑 테스트 명령: C-Seed 대사 1사이클 실행",
+  "command_bytes": 59,
+  "determinism_100_processes": {
+    "runs": 100,
+    "distinct_digests": 1,
+    "distinct_receipt_tags": 1,
+    "digest": "0x231b7310aa9f59fc",
+    "receipt_tag": "0x2a8ce5fb66aa4880"
+  },
+  "cold_start_to_hello_ms": {
+    "n": 100,
+    "min": 21.9793,
+    "median": 46.6576,
+    "p95": 58.1313,
+    "p99": 62.268,
+    "max": 62.268
+  },
+  "first_command_round_trip_ms": {
+    "n": 100,
+    "min": 0.3478,
+    "median": 0.7894,
+    "p95": 1.2361,
+    "p99": 9.5129,
+    "max": 9.5129
+  },
+  "warm_round_trip_ms_1000": {
+    "n": 1000,
+    "min": 0.1541,
+    "median": 0.2438,
+    "p95": 0.5124,
+    "p99": 0.8106,
+    "max": 1.0467
+  },
+  "warm_outcomes": {
+    "APPROVED": 64,
+    "NOT_APPROVED": 936
+  },
+  "warm_engine_cycles_served": 1000,
+  "engine_process_memory": {
+    "peak_working_set_bytes": 3592192,
+    "peak_private_bytes": 794624
+  },
+  "violation_to_error_and_exit_ms": {
+    "n": 100,
+    "min": 2.8389,
+    "median": 4.3058,
+    "p95": 5.5364,
+    "p99": 8.3692,
+    "max": 8.3692
+  }
+}
