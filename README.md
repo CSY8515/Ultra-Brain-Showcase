@@ -58,4 +58,7 @@
 
 ## 실행 영상
 
-15초 오프라인 실행 영상: 추가 예정
+Windows Sandbox(네트워크 차단) 안에 C-Seed-0 패키지가 올라간 화면 — 실행 콘솔 장면은 포함되지 않음
+
+- [c-seed-0-sandbox-1.mp4](media/c-seed-0-sandbox-1.mp4) — 24.6초, `--demo` 추가 전 빌드
+- [c-seed-0-sandbox-2.mp4](media/c-seed-0-sandbox-2.mp4) — 38.7초, 현재 빌드
