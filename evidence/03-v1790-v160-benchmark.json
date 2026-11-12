@@ -1,0 +1,71 @@
+{
+  "schema": "ultra-brain-showcase-benchmark/3",
+  "compiled_at": "2026-11-13T09:00:00+09:00",
+  "note": "Every number carries its provenance. CI numbers come from GitHub Actions windows-latest runs on the named commits; local numbers name the host, date and engine hash. Nothing here is a certification.",
+  "main": {
+    "repository": "CSY8515/Ultra-Brain (private)",
+    "release": "v1.7.90",
+    "code_commit": "52a8e04dd1bd63f6fed1f846ac0f7c10d3821b02",
+    "release_commit": "fa9335991a6059cf162b9357b3327e8eb5c8f929",
+    "previous": {"release": "v1.7.89", "code_commit": "bc97383", "ci_run": 43263272681, "unit_tests": "176/176", "clang_bytes": 231424},
+    "ci_run": 43304755869,
+    "ci_conclusion": "success",
+    "judged_real_process_checks": "9/9 PASS (--selftest 16/16, --resilience, --benchmark, --guards, --metabolism, --chipset, --memory, --legacy, --cortex)",
+    "unit_tests": "183/183 PASS",
+    "clang_build": {"flags": "-std=c11 -O2 -Wall -Wextra -pedantic -Werror", "warnings": 0, "output_bytes": 240128},
+    "msvc_build": {"flags": "/utf-8 /W4 /WX", "warnings": 0, "selftest": "16/16"},
+    "golden_receipts": {"file": "golden/dock_receipts_v1.json", "sha256": "b53b511ed937b75cb83d63e37ace33b5ab7afbfbbddfbf73f35d5cab575149dc", "status": "unchanged since v1.7.88; engine tests PASS in CI"},
+    "daemon_soak_ci": {"seconds": 30, "chunks": 4349, "restarts": 67, "peak_commit_bytes": 827392,
+                       "job_peak_process_memory_used_bytes": 1253376, "peak_working_set_bytes": 3231744,
+                       "idle_engine_cpu_seconds": 0.0, "job_object_limit_bytes": 15728640},
+    "full_regression": {"code_commit": "52a8e04", "cases": 6888, "PASS": 6790, "FAIL": 41, "ERROR": 40, "SKIP": 17,
+                        "designated_core": "191/191", "new_regressions": 0, "missing_cases": 0,
+                        "historical_owner_exempt_fail_error": 81, "raw_all_pass": false,
+                        "interpreter_sha256": "ef8f51028ac5329641985112f8efb1c2d4c47c86b8011ddf7e6fae21e2b4e5a1",
+                        "window_utc": "2026-11-12T20:54:19Z/2026-11-12T21:37:29Z",
+                        "result_sha256": "a1e17cddfc4c820a217fb9ee89a4e7c503ed279aeb59587f40974360adeaff67",
+                        "case_results_sha256": "f6c74b4a83427850366cb822d32bdadb94ed2af2f736cab92d478c98a665c569"},
+    "self_forged_vectors": {"vectors": 24, "digest": "0x28762C01", "independent_python_model": "match"},
+    "local_execution": "NOT_RUN: Smart App Control blocked the v1.7.89 and v1.7.90 local builds (MSVC engine built 2026-11-13, 264,192 B, SHA-256 b693af1771a77a314311089aa7b7aa243fc527422023578ebcefbaa2c2990691, blocked)"
+  },
+  "legacy": {
+    "repository": "CSY8515/Ultra-Brain-Legacy",
+    "release": "v1.60",
+    "tag_commit": "db8a33fc033359285ee3718fff5bec84429fe760",
+    "code_commit": "5ec3a52c1c6764cb9544f08dddb8ecd4190623aa",
+    "ci_run": 43326168502,
+    "ci_conclusion": "success",
+    "runner": "24/24 (CHECK 24 --cortexdock), full self-test + 17 flags exit 0",
+    "mesh": "31/31 (TEST 31)",
+    "clang_build": {"warnings": 0, "runner_bytes": 241152, "mesh_bytes": 237056},
+    "msvc_build": {"flags": "/utf-8 /W4 /WX", "warnings": 0},
+    "alignment": "runner CHECK 1: 28 structures, mesh TEST 1: 37 structures, 0 deviation from 16 bytes",
+    "blob_identity_with_main_52a8e04": {"c_seed_cortex_dock.h": "4ff66237a536843342a8fb51eb3ccbb60fde92be", "c_seed_dock.h": "a14256a516fe9686b5ddf20354c3fe5d8f5147a8"},
+    "rules": "82-84, invariants 62-64 (spec ARCH-SEED-INTEL-002 section 27)",
+    "previous": {"release": "v1.59", "commit": "f9377d5", "runner": "23/23", "mesh": "30/30", "rules": "79-81"}
+  },
+  "measured_2026_11_11_local": {
+    "source": "evidence/02-c-seed-0-measurements.json",
+    "host": "local Windows 11 PC, Smart App Control On",
+    "engine_sha256": "4f93428a9946753b94922d26e88ef9d8fb66b25dc552fb0dfad5c5d01881d6e9",
+    "engine_bytes": 193536,
+    "engine_commit": "48ed761 (before the cortex layer existed)",
+    "warm_round_trip_ms_1000": {"median": 0.2438, "p99": 0.8106, "max": 1.0467},
+    "cold_start_to_hello_ms_100": {"median": 46.6576, "p99": 62.268},
+    "violation_to_error_and_exit_ms_100": {"median": 4.3058},
+    "determinism_100_processes": "100/100 identical digest and receipt tag",
+    "peak_working_set_bytes": 3592192
+  },
+  "not_measured": {
+    "fast_advice_round_trip": "NOT_RUN. The 0.244 ms warm round trip above was measured on 2026-11-11 with cortex off (the cortex did not exist). The FAST advice path (16-byte worker slice, worker steps 3 instead of 6 per packet in CI tests) was not timed; a local attempt on 2026-11-13 was blocked by Smart App Control.",
+    "cortex_restore_time": "NOT_RUN. The restore is 48 dock frames before the first cycle; it was not timed. 'Zero-second restore' means it is part of engine start-up, not a measured 0.",
+    "control_tower_display": "not in v1.7.90"
+  },
+  "labs": {
+    "repository": "CSY8515/Ultra-Brain-Labs",
+    "release": "v1.0.0",
+    "binary": "win_zero_cli.exe, 5,120 bytes, imports KERNEL32.dll only",
+    "sha256": "a535d15b6a15df34c0a24a1838fd7b085ce098034fc8502be923e454b0164d56",
+    "ci_run": 43205024784
+  }
+}

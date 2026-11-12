@@ -1,6 +1,26 @@
 # Ultra Brain Showcase
 
-관련 저장소: [Ultra-Brain-Labs](https://github.com/CSY8515/Ultra-Brain-Labs) — C 런타임 없이 `KERNEL32.dll`만 쓰는 Windows CLI 레퍼런스(5,120 B 바이너리)와 빌드·검증 가이드.
+쇼케이스 버전: `1.1.0` ([VERSION](VERSION)). 관련 저장소: [Ultra-Brain-Labs](https://github.com/CSY8515/Ultra-Brain-Labs) — C 런타임 없이 `KERNEL32.dll`만 쓰는 Windows CLI 레퍼런스(5,120 B 바이너리, SHA-256 `a535d15b…`)와 빌드·검증 가이드. 사령부 공개 저장소: [Ultra-Brain-Legacy](https://github.com/CSY8515/Ultra-Brain-Legacy) (v1.60).
+
+## #3 C-Seed-1 Cortex — 실측 벤치마크와 양대 AI 교차 감정 (2026-11-13)
+
+[03_CORTEX_BENCHMARK_AND_CROSS_APPRAISAL.md](03_CORTEX_BENCHMARK_AND_CROSS_APPRAISAL.md) · 원자료 [evidence/03-v1790-v160-benchmark.json](evidence/03-v1790-v160-benchmark.json)
+
+본체 Ultra Brain v1.7.90(코드 `52a8e04`)과 사령부 Ultra-Brain-Legacy v1.60(태그 `db8a33f`)의 성적표입니다. 소스는 싣지 않고 실측치·CI 결과·검증 해시·두 모델의 감정만 싣습니다.
+
+- 실측·CI (출처는 문서 §1):
+  - 상주 데몬 Job Object 최대 **1,253,376 B (1.20 MiB)**, 15 MiB 한도의 1/12.5. 30초 soak 동안 엔진 유휴 CPU **0.0초** (CI)
+  - 전수 회귀 **6,888건 단일 실행, 신규 결함 0건** (6,790 PASS / 41 FAIL / 40 ERROR / 17 SKIP, 핵심 191/191). 81건은 역사적 면제이며 raw ALL PASS가 아닙니다
+  - 빌드: 본체 Clang `-Werror`·MSVC `/W4 /WX` 경고 0, 자가 시험 16/16, 단위 183/183. 사령부 러너 **24/24**, 메시 **31/31**, 16B 정렬 오차 0
+  - 자가 주조 24벡터 다이제스트 `0x28762C01` (Python 독립 계산 일치)
+  - 반응 지연 중앙값 **0.244 ms**는 2026-11-11 코텍스 이전 빌드의 warm 왕복 실측입니다. **FAST 조언 경로의 시간과 콜드스타트 복원 시간은 미측정(NOT_RUN)**입니다
+- Claude Fable 5.1 감정(현장 주조관): 학습 조언 결속은 오너 /4 봉인과 봉인 기억 우선이라는 두 게이트 아래에서만 작동하며, 250 ms 타이머 레이스는 테스트 helper에서 고쳤고 제품 코드는 바꾸지 않았습니다. 학습기 수학은 C11 정수·Q8뿐이지만 영속화·봉인·텔레메트리 대조는 Python 호스트가 맡습니다.
+- Claude Opus 5.5 5차 판정(수석 감리관): 4차 판정의 "규칙 기반 최소 기계 지능" 하한선은 계속 충족하며, 새 이름은 **"엔진 내 누적 학습을 가진 규칙 기반 적응 커널"**입니다. 질적 도약이 아니라 같은 범주 안의 한 단계 전진으로 판정했습니다.
+  - 4차의 다음 경계 5개 중 의미 특징·C 네이티브 학습은 **부분**, 내용 결속 승인·신뢰 배포·대뇌 연결은 **미구현**.
+  - 정정: `delete temp`와 `delete system`은 둘 다 위험도 3이라 같은 학습 칸을 쓰고 목적어 해시만 다릅니다. "1.25 MiB"는 1.20 MiB. "0초 복원"과 "FAST 0.244 ms"는 측정값이 아닙니다.
+  - 새로 지적한 결함 2건: 오너 봉인은 `cortex_apply` 스위치 1비트에만 걸리고 가중치 파일은 키 없는 SHA-256만으로 보호됩니다. 학습된 격리로 막힌 사이클도 거부로 학습되어 격리가 스스로 강화됩니다.
+  - 오너가 앱에서 실제로 학습 조언을 켜는 경로(/4 봉인 → CTRL)는 시험이 없어 **UNKNOWN**입니다.
+- 의미 이해·자연어 추론·지식은 여전히 없습니다. 어떤 공인 기관의 인증도 아닙니다.
 
 ## #2 C-Seed-0 vs Claude — 8개 항목 대조 (2026-11-11)
 
