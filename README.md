@@ -1,5 +1,7 @@
 # Ultra Brain Showcase
 
+관련 저장소: [Ultra-Brain-Labs](https://github.com/CSY8515/Ultra-Brain-Labs) — C 런타임 없이 `KERNEL32.dll`만 쓰는 Windows CLI 레퍼런스(5,120 B 바이너리)와 빌드·검증 가이드.
+
 ## #2 C-Seed-0 vs Claude — 8개 항목 대조 (2026-11-11)
 
 [02_C-SEED-0_VS_CLAUDE.md](02_C-SEED-0_VS_CLAUDE.md)
