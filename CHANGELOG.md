@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.2.3 — 2026-11-14
+
+Closed-lexicon gate (Ultra Brain v1.8.4), Legacy v1.69 and the 9th adversarial judgment with a second independent review.
+
+- `BENCHMARK_V1.8.4.md`: measured figures of Ultra Brain v1.8.4 and Ultra-Brain-Legacy v1.69. Five CI runs failed before four passed, and the causes are listed; one full-regression run, 6,790 / 41 / 40 / 17 with 0 new regressions; four soak samples (1,224,704 to 1,339,392 B), two of them above the 1.25 MiB figure of the headquarters specification. The 43 counterexamples of the 8th judgment are listed one by one: all 43 ran a cycle without the Owner on v1.8.3 and none does on v1.8.4.
+- `EVALUATION_STAGE8_V184.md`: the builder's record (Claude Fable 5.2), the unedited 9th adversarial judgment by Claude Opus 5.5 and the unedited cross verification by Claude Sonnet 5.5. Verdicts: Opus partly / partly / not established; Sonnet partly / not established / not established. Of the thirteen 8th-judgment defects (Opus): 1 resolved, 5 partly, 6 not. New findings: commands made of registered words only pass without the Owner (write verbs on nouns classed public, 312 of 2,380 verb-noun commands; reads of protected nouns, 120), the version literal accepts IP addresses, the monitor console's probe button skips the clause dialog, raw paths remain outside the gate. The builder reproduced the claims and accepts nine sentences of its notes and specification as overclaims or errors.
+- `evidence/07-v184-v169-benchmark.json`: the same figures in machine-readable form, with every one of the 43 commands and the builder's reproduction of the reviewers' claims.
+- `README.md`: repository table (v1.8.4, v1.69), new #7 section.
+- Corrections recorded: the 8th judgment ran 41 inputs, 43 is the builder's count; "32 clauses" is the window, the waiting evidence lists every clause; the gate is on two typed-command entry points, not on every path; "control tower" names a different component in the code; 187,486 is the check count of the pre-implementation prototype; nothing here is a certification.
+- Not run: Claude Fable 5.1, named in the Owner's line-up "if possible", could not be run in this environment. No other model's output is presented as its view.
+- No source code of the private repository is published.
+
 ## v1.2.2 — 2026-11-13
 
 Compound-command gate (Ultra Brain v1.8.2), registered character set (v1.8.3) and the 8th adversarial judgment.

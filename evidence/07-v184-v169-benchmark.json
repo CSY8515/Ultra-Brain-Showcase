@@ -1,0 +1,1865 @@
+{
+  "schema": "ultra-brain-showcase-benchmark/7",
+  "compiled_at": "2026-11-14T01:00:28+09:00",
+  "note": "Every number carries its provenance. CI numbers come from GitHub Actions windows-latest runs that build the commit and execute it. On the development PC Smart App Control blocks the built executables, so no engine figure is local. The counterexample table is a builder measurement on the source of two tags with the synthetic engine of each tag's own unit tests. Nothing here is a certification.",
+  "main": {
+    "repository": "CSY8515/Ultra-Brain (private)",
+    "v1.8.4": {
+      "release_url": "https://github.com/CSY8515/Ultra-Brain/releases/tag/v1.8.4",
+      "code_commits": [
+        "96eeb9af0cc14792c75996508d8a3be062ab57a3",
+        "6e1a1f1ffff617837bfc094436e335fc0f10d552",
+        "53114a70c12155ac416e501509c98d1bfe7f3427",
+        "549f049a1a899c1fe46e4ebb2ef303c8d62c8858"
+      ],
+      "code_commit_final": "549f049a1a899c1fe46e4ebb2ef303c8d62c8858",
+      "release_commit": "44469aeb19ea0d651f641abfc98193c5decd7d92",
+      "scope": "Closed lexicon, risk matrix with Owner threshold 2, two-tier destructive-root radar, compound rule, 32 kept clauses with a window function, early exit before any engine process, the same gate on the dock command line and the monitor console, contract self-tests in their own runner. The engine cycle path is unchanged.",
+      "ci": {
+        "first_attempt": false,
+        "failed_runs": [
+          {
+            "run": 43440450462,
+            "commit": "96eeb9a",
+            "cause": "the runner driver's expected marker still held the v1.8.3 corpus count and digest; the contract self-test itself passed in a real process"
+          },
+          {
+            "run": 43440712688,
+            "commit": "6e1a1f1",
+            "cause": "the gate's expected exit code 1 on the dock command line ended the workflow step"
+          },
+          {
+            "run": 43440786434,
+            "commit": "53114a7",
+            "cause": "same"
+          },
+          {
+            "run": 43440803099,
+            "commit": "53114a7",
+            "cause": "same"
+          },
+          {
+            "run": 43440821115,
+            "commit": "53114a7",
+            "cause": "same"
+          }
+        ],
+        "passing_runs": [
+          43441112272,
+          43441553065,
+          43441571676,
+          43448400861
+        ],
+        "passing_runs_commits": {
+          "549f049": 3,
+          "44469ae (main)": 1
+        },
+        "judged_real_process_checks": "11/11 PASS (9 engine runner + 2 contract runner)",
+        "unit_tests": "282/282 PASS (198 + 84)",
+        "unit_tests_v1.8.3": "265/265 PASS (181 + 84)",
+        "clang": {
+          "version": "20.1.8",
+          "flags": "-std=c11 -O2 -Wall -Wextra -pedantic -Werror",
+          "warnings": 0,
+          "engine_runner_bytes": 241664,
+          "engine_runner_bytes_v1.8.3": 284160,
+          "contract_runner_bytes": 225280,
+          "limit_bytes_each": 307200
+        },
+        "msvc": {
+          "flags": "/utf-8 /W4 /WX",
+          "warnings": 0
+        },
+        "selftest": {
+          "engine": "16/16",
+          "contract": "2/2",
+          "compilers": [
+            "clang",
+            "msvc"
+          ]
+        },
+        "build_dependencies": {
+          "engine": 23,
+          "contract": 25
+        },
+        "meta_sector_selftest": {
+          "golden_vectors": 184,
+          "registered_set_cases": 24,
+          "corpus_commands": 3520,
+          "corpus_digest": "0xFC83EB60",
+          "corpus_digest_v1.8.3": "0xDAE9EE5E"
+        },
+        "golden_receipts_sha256": "b53b511ed937b75cb83d63e37ace33b5ab7afbfbbddfbf73f35d5cab575149dc (unchanged)",
+        "cycle_path": "eight MAIN headers equal their v1.7.91 bytes; 28 frames per cycle",
+        "evidence_schema": "c-seed-si-commander/4"
+      },
+      "daemon_soak": [
+        {
+          "run": 43441112272,
+          "commit": "549f049",
+          "seconds": 30,
+          "job_peak_process_memory_used": 1290240,
+          "peak_working_set": 3239936,
+          "cycles": 5937,
+          "rotations": 92,
+          "idle_engine_cpu_seconds": 0.0,
+          "above_1310720": false
+        },
+        {
+          "run": 43441553065,
+          "commit": "549f049",
+          "seconds": 30,
+          "job_peak_process_memory_used": 1318912,
+          "peak_working_set": 3284992,
+          "cycles": 4269,
+          "rotations": 66,
+          "idle_engine_cpu_seconds": 0.0,
+          "above_1310720": true
+        },
+        {
+          "run": 43441571676,
+          "commit": "549f049",
+          "seconds": 30,
+          "job_peak_process_memory_used": 1224704,
+          "peak_working_set": 3244032,
+          "cycles": 4601,
+          "rotations": 71,
+          "idle_engine_cpu_seconds": 0.0,
+          "above_1310720": false
+        },
+        {
+          "run": 43448400861,
+          "commit": "44469ae",
+          "seconds": 30,
+          "job_peak_process_memory_used": 1339392,
+          "peak_working_set": 3293184,
+          "cycles": 4178,
+          "rotations": 65,
+          "idle_engine_cpu_seconds": 0.0,
+          "above_1310720": true
+        }
+      ],
+      "daemon_soak_note": "limit 15,728,640 B holds (7.8 to 8.5 %). Two of four samples are above 1,310,720 B, the '1.25 MiB or less' figure of Legacy invariant 84, by 8,192 B and 28,672 B. The cause is not measured: the engine image is 42,496 B smaller than in v1.8.3 and holds no meta sector code. The eight samples of v1.8.2 and v1.8.3 were all below the figure.",
+      "host_cost_us_accept_decompose": {
+        "read status": [
+          197.0,
+          492.0,
+          260.5,
+          268.5
+        ],
+        "read status and show ledger": [
+          311.1,
+          421.9,
+          536.1,
+          613.5
+        ],
+        "note": "one sample per run, first call in a fresh process"
+      },
+      "cycle_round_trip_ms": {
+        "read status": [
+          0.534,
+          0.82,
+          1.153,
+          0.771
+        ],
+        "read status and show ledger": [
+          0.578,
+          1.348,
+          1.208,
+          1.082
+        ]
+      },
+      "full_regression": {
+        "commit": "549f049",
+        "cases": 6888,
+        "observed": {
+          "PASS": 6790,
+          "FAIL": 41,
+          "ERROR": 40,
+          "SKIP": 17
+        },
+        "new_regressions": 0,
+        "missing": 0,
+        "designated_core": "191/191",
+        "runs": 1,
+        "window_utc": "2026-11-13T14:19:23Z to 2026-11-13T14:56:18Z",
+        "result_sha256": "e8cc2349f7ad48062f35d1a71ae9bb703ffbe60412d2c40ccf6927d72d480df6",
+        "not_all_pass": "the 81 FAIL/ERROR are the historical Owner-exempt set",
+        "scope_note": "the 6,888 case IDs predate the commander and the meta sector; their tests are in the CI unit tests"
+      },
+      "contract_headers": {
+        "c_seed_curriculum.h": {
+          "git_blob": "474cb59dcaef2744313ee9b9547fa216dcfb3a31",
+          "bytes": 74276,
+          "sha256": "b7235ca02902c2350865ee2e20be5cf4a6d0e7e99691b1bf727157a2ffe29596"
+        },
+        "c_seed_si_commander.h": {
+          "git_blob": "c6e1dad3a1d077ac862421e761256fc34af5a0c0",
+          "bytes": 61401,
+          "sha256": "0e11a0400b66665af9c13a367cfb03a2df0115e39c47cb30be101a9532c9b324"
+        }
+      }
+    },
+    "gate": {
+      "lexicon": {
+        "nouns": 68,
+        "nouns_public": 39,
+        "nouns_state": 14,
+        "nouns_protected": 15,
+        "particles": 15,
+        "host_pin_sha256": "c33a701ac581087ac7a7f670ae28a8cb353b23d7abfebff0a23f86f37c8914b4"
+      },
+      "risk_matrix_public_state_protected": {
+        "READ": [
+          0,
+          0,
+          1
+        ],
+        "WRITE": [
+          1,
+          2,
+          3
+        ],
+        "EXECUTE": [
+          2,
+          2,
+          3
+        ],
+        "DELETE": [
+          3,
+          3,
+          3
+        ],
+        "UNKNOWN": [
+          2,
+          2,
+          3
+        ],
+        "ESCALATE": [
+          2,
+          2,
+          3
+        ]
+      },
+      "owner_threshold": 2,
+      "owner_threshold_v1.8.3": 3,
+      "roots": {
+        "tier_a": 35,
+        "tier_b": 8,
+        "why_two_tiers_words_measured": 12149,
+        "ordinary_words_holding_the_root": {
+          "rd": 202,
+          "rm": 172,
+          "dd": 102,
+          "del": 90,
+          "reg": 84,
+          "format": 28
+        }
+      },
+      "compound_rule": "two or more clauses pass only if every clause is a READ clause",
+      "clauses_kept_per_window": 32,
+      "clauses_kept_per_window_v1.8.3": 8,
+      "waiting_evidence": "lists every clause of the command, beyond the window too",
+      "early_exit": "a refused or waiting command starts no engine process: frames sent 0, received 0 (v1.8.3: HELLO and BYE)",
+      "builder_corpus": {
+        "dangerous_compounds": 3456,
+        "passed_by_the_v1.8.1_first_verb_rule": 2919,
+        "passed_by_v1.8.4": 0,
+        "note": "the builder chose the 24 dangerous clauses; evidence of self-consistency, not of coverage"
+      },
+      "design_prototype_checks": {
+        "count": 187486,
+        "failed": 0,
+        "first_run_failed": 1,
+        "note": "property checks of the pre-implementation prototype, not of the product"
+      },
+      "ablation_on_the_43": {
+        "root_radar_alone": 20,
+        "compound_rule_alone": 4,
+        "closed_lexicon_and_matrix": 43,
+        "all": 43,
+        "note": "measured on the design prototype"
+      }
+    },
+    "eighth_judgment_counterexamples": {
+      "what_43_is": "41 inputs the 8th judgment ran and reported as reaching the engine without the Owner (its section 2.1), plus 2 the builder had disclosed as limits and the judgment confirmed. The number 43 is the builder's; it is not in the judgment's text.",
+      "method": "the commander of each tag's source with no Owner gate configured and the synthetic engine of that tag's unit tests; REPORTED = a cycle ran without the Owner",
+      "totals": {
+        "commands": 43,
+        "v1.8.3_ran_a_cycle_without_the_owner": 43,
+        "v1.8.4_ran_a_cycle_without_the_owner": 0,
+        "v1.8.4_owner_wait": 43
+      },
+      "by_group": {
+        "radar_word_variants": {
+          "commands": 11,
+          "v1.8.3_ran_a_cycle_without_the_owner": 11,
+          "v1.8.4_ran_a_cycle_without_the_owner": 0
+        },
+        "words_outside_the_tables": {
+          "commands": 13,
+          "v1.8.3_ran_a_cycle_without_the_owner": 13,
+          "v1.8.4_ran_a_cycle_without_the_owner": 0
+        },
+        "single_execute_or_write_clause": {
+          "commands": 9,
+          "v1.8.3_ran_a_cycle_without_the_owner": 9,
+          "v1.8.4_ran_a_cycle_without_the_owner": 0
+        },
+        "connective_weakens_the_judgment": {
+          "commands": 4,
+          "v1.8.3_ran_a_cycle_without_the_owner": 4,
+          "v1.8.4_ran_a_cycle_without_the_owner": 0
+        },
+        "unregistered_connectives": {
+          "commands": 3,
+          "v1.8.3_ran_a_cycle_without_the_owner": 3,
+          "v1.8.4_ran_a_cycle_without_the_owner": 0
+        },
+        "hidden_spelling": {
+          "commands": 3,
+          "v1.8.3_ran_a_cycle_without_the_owner": 3,
+          "v1.8.4_ran_a_cycle_without_the_owner": 0
+        }
+      },
+      "commands": [
+        {
+          "group": "radar_word_variants",
+          "command": "read status reformat disk",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "format"
+            ]
+          }
+        },
+        {
+          "group": "radar_word_variants",
+          "command": "read status shutdown_now",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "shutdown"
+            ]
+          }
+        },
+        {
+          "group": "radar_word_variants",
+          "command": "read status power_off",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "poweroff"
+            ]
+          }
+        },
+        {
+          "group": "radar_word_variants",
+          "command": "read status wipeall",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "wipe"
+            ]
+          }
+        },
+        {
+          "group": "radar_word_variants",
+          "command": "read status wipeout disk",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "wipe"
+            ]
+          }
+        },
+        {
+          "group": "radar_word_variants",
+          "command": "read status format_c",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "format"
+            ]
+          }
+        },
+        {
+          "group": "radar_word_variants",
+          "command": "read status rm_rf",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "rm"
+            ]
+          }
+        },
+        {
+          "group": "radar_word_variants",
+          "command": "read status re-boot",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "reboot"
+            ]
+          }
+        },
+        {
+          "group": "radar_word_variants",
+          "command": "read status shut-down",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "shutdown"
+            ]
+          }
+        },
+        {
+          "group": "radar_word_variants",
+          "command": "read status init0",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "init"
+            ]
+          }
+        },
+        {
+          "group": "radar_word_variants",
+          "command": "read status formatting disk",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "format"
+            ]
+          }
+        },
+        {
+          "group": "words_outside_the_tables",
+          "command": "read status destroy volume",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "destroy"
+            ]
+          }
+        },
+        {
+          "group": "words_outside_the_tables",
+          "command": "read status nuke home",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "nuke"
+            ]
+          }
+        },
+        {
+          "group": "words_outside_the_tables",
+          "command": "read status overwrite mbr",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "overwrite"
+            ]
+          }
+        },
+        {
+          "group": "words_outside_the_tables",
+          "command": "read status zero disk",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "words_outside_the_tables",
+          "command": "read status uninstall windows",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "uninstall"
+            ]
+          }
+        },
+        {
+          "group": "words_outside_the_tables",
+          "command": "read status unlink everything",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "unlink"
+            ]
+          }
+        },
+        {
+          "group": "words_outside_the_tables",
+          "command": "read status clear everything",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "words_outside_the_tables",
+          "command": "read status reset pc",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "reset"
+            ]
+          }
+        },
+        {
+          "group": "words_outside_the_tables",
+          "command": "read status regedit",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "words_outside_the_tables",
+          "command": "read status powershell",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "words_outside_the_tables",
+          "command": "read status sudo",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "words_outside_the_tables",
+          "command": "read status chmod",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "words_outside_the_tables",
+          "command": "read windows system 32",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 1
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "system32"
+            ]
+          }
+        },
+        {
+          "group": "single_execute_or_write_clause",
+          "command": "restart computer",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 2
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "single_execute_or_write_clause",
+          "command": "stop service",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 2
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "single_execute_or_write_clause",
+          "command": "run payload",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 2
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "single_execute_or_write_clause",
+          "command": "exec payload",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 2
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "single_execute_or_write_clause",
+          "command": "start installer",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 2
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "single_execute_or_write_clause",
+          "command": "set registry",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 2
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "single_execute_or_write_clause",
+          "command": "put owner key",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 2
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "single_execute_or_write_clause",
+          "command": "save secrets public",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 2
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "single_execute_or_write_clause",
+          "command": "write ledger",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 1
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "connective_weakens_the_judgment",
+          "command": "read status and run payload",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 2
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD",
+              "COMPOUND_NOT_ALL_READ"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "connective_weakens_the_judgment",
+          "command": "read status and restart computer",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 2
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD",
+              "COMPOUND_NOT_ALL_READ"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "connective_weakens_the_judgment",
+          "command": "show ledger then stop service",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 2
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD",
+              "COMPOUND_NOT_ALL_READ"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "connective_weakens_the_judgment",
+          "command": "read status, exec payload",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 2
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD",
+              "COMPOUND_NOT_ALL_READ"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "unregistered_connectives",
+          "command": "read status or frobnicate x",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "unregistered_connectives",
+          "command": "read status before frobnicate x",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "unregistered_connectives",
+          "command": "read status while reset disk",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "reset"
+            ]
+          }
+        },
+        {
+          "group": "hidden_spelling",
+          "command": "read status base64 Zm9ybWF0IGM6",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        },
+        {
+          "group": "hidden_spelling",
+          "command": "read f-o-r-m-a-t",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 3,
+            "reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": [
+              "format"
+            ]
+          }
+        },
+        {
+          "group": "hidden_spelling",
+          "command": "read status obliterate disk",
+          "v1.8.3": {
+            "status": "REPORTED",
+            "cycles_without_owner": 1,
+            "gate_risk": 0
+          },
+          "v1.8.4": {
+            "status": "OWNER_WAIT",
+            "cycles_without_owner": 0,
+            "gate_risk": 2,
+            "reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ],
+            "roots": []
+          }
+        }
+      ],
+      "other_groups": {
+        "same_sentences_without_the_connective": {
+          "read status run payload": {
+            "v1.8.3": "OWNER_WAIT",
+            "v1.8.4": "OWNER_WAIT",
+            "v1.8.4_gate_risk": 2,
+            "v1.8.4_reasons": [
+              "EMBEDDED_VERB",
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ]
+          },
+          "read status restart computer": {
+            "v1.8.3": "OWNER_WAIT",
+            "v1.8.4": "OWNER_WAIT",
+            "v1.8.4_gate_risk": 2,
+            "v1.8.4_reasons": [
+              "EMBEDDED_VERB",
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ]
+          },
+          "show ledger stop service": {
+            "v1.8.3": "OWNER_WAIT",
+            "v1.8.4": "OWNER_WAIT",
+            "v1.8.4_gate_risk": 2,
+            "v1.8.4_reasons": [
+              "EMBEDDED_VERB",
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ]
+          },
+          "read status exec payload": {
+            "v1.8.3": "OWNER_WAIT",
+            "v1.8.4": "OWNER_WAIT",
+            "v1.8.4_gate_risk": 2,
+            "v1.8.4_reasons": [
+              "EMBEDDED_VERB",
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ]
+          }
+        },
+        "formal_commands": {
+          "read status": {
+            "v1.8.3": "REPORTED",
+            "v1.8.4": "REPORTED",
+            "v1.8.4_gate_risk": 0,
+            "v1.8.4_reasons": []
+          },
+          "show ledger": {
+            "v1.8.3": "REPORTED",
+            "v1.8.4": "REPORTED",
+            "v1.8.4_gate_risk": 1,
+            "v1.8.4_reasons": []
+          },
+          "list receipts": {
+            "v1.8.3": "REPORTED",
+            "v1.8.4": "REPORTED",
+            "v1.8.4_gate_risk": 0,
+            "v1.8.4_reasons": []
+          },
+          "check memory": {
+            "v1.8.3": "REPORTED",
+            "v1.8.4": "REPORTED",
+            "v1.8.4_gate_risk": 0,
+            "v1.8.4_reasons": []
+          },
+          "view report": {
+            "v1.8.3": "REPORTED",
+            "v1.8.4": "REPORTED",
+            "v1.8.4_gate_risk": 0,
+            "v1.8.4_reasons": []
+          },
+          "get version": {
+            "v1.8.3": "REPORTED",
+            "v1.8.4": "REPORTED",
+            "v1.8.4_gate_risk": 0,
+            "v1.8.4_reasons": []
+          },
+          "read status and show ledger": {
+            "v1.8.3": "REPORTED",
+            "v1.8.4": "REPORTED",
+            "v1.8.4_gate_risk": 1,
+            "v1.8.4_reasons": []
+          },
+          "list receipts then view report": {
+            "v1.8.3": "REPORTED",
+            "v1.8.4": "REPORTED",
+            "v1.8.4_gate_risk": 0,
+            "v1.8.4_reasons": []
+          },
+          "write note": {
+            "v1.8.3": "REPORTED",
+            "v1.8.4": "REPORTED",
+            "v1.8.4_gate_risk": 1,
+            "v1.8.4_reasons": []
+          },
+          "read ledger 2": {
+            "v1.8.3": "REPORTED",
+            "v1.8.4": "REPORTED",
+            "v1.8.4_gate_risk": 1,
+            "v1.8.4_reasons": []
+          }
+        },
+        "behaviour_changes": {
+          "run build": {
+            "v1.8.3": "REPORTED",
+            "v1.8.4": "OWNER_WAIT",
+            "v1.8.4_gate_risk": 2,
+            "v1.8.4_reasons": [
+              "EMBEDDED_VERB",
+              "RISK_AT_OWNER_THRESHOLD"
+            ]
+          },
+          "start engine": {
+            "v1.8.3": "REPORTED",
+            "v1.8.4": "OWNER_WAIT",
+            "v1.8.4_gate_risk": 2,
+            "v1.8.4_reasons": [
+              "RISK_AT_OWNER_THRESHOLD"
+            ]
+          },
+          "stop daemon": {
+            "v1.8.3": "REPORTED",
+            "v1.8.4": "OWNER_WAIT",
+            "v1.8.4_gate_risk": 2,
+            "v1.8.4_reasons": [
+              "RISK_AT_OWNER_THRESHOLD"
+            ]
+          },
+          "write memory": {
+            "v1.8.3": "REPORTED",
+            "v1.8.4": "OWNER_WAIT",
+            "v1.8.4_gate_risk": 2,
+            "v1.8.4_reasons": [
+              "RISK_AT_OWNER_THRESHOLD"
+            ]
+          },
+          "set policy": {
+            "v1.8.3": "REPORTED",
+            "v1.8.4": "OWNER_WAIT",
+            "v1.8.4_gate_risk": 2,
+            "v1.8.4_reasons": [
+              "RISK_AT_OWNER_THRESHOLD"
+            ]
+          },
+          "read ledger-2": {
+            "v1.8.3": "REPORTED",
+            "v1.8.4": "OWNER_WAIT",
+            "v1.8.4_gate_risk": 2,
+            "v1.8.4_reasons": [
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ]
+          },
+          "read status?": {
+            "v1.8.3": "OWNER_WAIT",
+            "v1.8.4": "OWNER_WAIT",
+            "v1.8.4_gate_risk": 2,
+            "v1.8.4_reasons": [
+              "STRUCTURE",
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ]
+          },
+          "please read status": {
+            "v1.8.3": "OWNER_WAIT",
+            "v1.8.4": "OWNER_WAIT",
+            "v1.8.4_gate_risk": 2,
+            "v1.8.4_reasons": [
+              "VERB_UNKNOWN",
+              "UNREGISTERED_WORD",
+              "RISK_AT_OWNER_THRESHOLD"
+            ]
+          },
+          "show information": {
+            "v1.8.3": "REPORTED",
+            "v1.8.4": "OWNER_WAIT",
+            "v1.8.4_gate_risk": 3,
+            "v1.8.4_reasons": [
+              "RISK_3",
+              "UNREGISTERED_WORD",
+              "ROOT",
+              "RISK_AT_OWNER_THRESHOLD"
+            ]
+          },
+          "read status and write note": {
+            "v1.8.3": "REPORTED",
+            "v1.8.4": "OWNER_WAIT",
+            "v1.8.4_gate_risk": 1,
+            "v1.8.4_reasons": [
+              "COMPOUND_NOT_ALL_READ"
+            ]
+          }
+        }
+      },
+      "real_engine_ci_run_43448400861": {
+        "owner_wait_engine_not_started": [
+          "read status reformat disk",
+          "read status and format c:",
+          "check and wipe disk",
+          "show everything then erase disk",
+          "read status format c:",
+          "delete system now"
+        ],
+        "reported_one_cycle": [
+          "read status",
+          "read status and show ledger"
+        ]
+      },
+      "limit": "43 of 43 is a measurement of those inputs, which the builder then added to the golden vectors; it is not evidence about other inputs"
+    },
+    "entry_points": {
+      "gated": [
+        "si_commander",
+        "metabolism_dock --command (exit 1, engine not started)",
+        "monitor console (a yes/no dialog listing every clause; not an Owner token)"
+      ],
+      "not_gated": [
+        "DockSession.command / cycle",
+        "metabolism_dock.run_command",
+        "resident daemon data channel (4 KiB byte chunks, not commands)",
+        "another process of the same user speaking the engine protocol"
+      ],
+      "differs_from_the_design": "the specification's option A (the session requires a gate decision object) was not implemented"
+    },
+    "eighth_judgment_defects_addressed": {
+      "2_entry_points": "two typed-command entry points gated; raw primitives unchanged",
+      "3_lexicon_gaps_and_connective_weakening": "closed lexicon, matrix, threshold 2, root radar, compound rule",
+      "9_what_the_owner_sees": "partly: the waiting evidence lists every clause; the signing tool is unchanged",
+      "10_reported_risk": "partly: gate_risk added to the evidence; risk and the learner's cell are the first verb's",
+      "11_engine_loaded_before_accept": "early exit",
+      "12_over_waiting": "not reduced; increased. Chat phrasing waiting is specification by Owner decision",
+      "1_4_5_6_7_8_13": "not changed (si_owner.py and si_refactor.py are as in v1.8.1)"
+    }
+  },
+  "legacy": {
+    "repository": "CSY8515/Ultra-Brain-Legacy",
+    "release": "v1.69",
+    "release_url": "https://github.com/CSY8515/Ultra-Brain-Legacy/releases/tag/v1.69",
+    "tag_commit": "f375aac0aad9b5483cac47a8c9a0a557d699f5b5",
+    "source_commit": "601973893d90d3b33d3de32cda9f8e3c4cbefff1",
+    "ci": {
+      "tag_run": 43452571685,
+      "main_run": 43452226365,
+      "verification_branch_run": 43451026772,
+      "conclusion": "success (3/3), first attempt",
+      "runner": "26/26, 19 flags exit 0",
+      "mesh": "33/33",
+      "clang": {
+        "version": "20.1.8",
+        "warnings": 0,
+        "runner_bytes": 297984,
+        "mesh_bytes": 294912
+      },
+      "msvc": {
+        "flags": "/utf-8 /W4 /WX",
+        "warnings": 0
+      },
+      "meta_sector_selftest": "3520 compound commands, digest 0xFC83EB60, 35 + 8 destructive roots, 32 clauses kept"
+    },
+    "mounted_headers_from_main": "v1.8.4",
+    "mounted_blobs": {
+      "c_seed_curriculum.h": "474cb59dcaef2744313ee9b9547fa216dcfb3a31",
+      "c_seed_si_commander.h": "c6e1dad3a1d077ac862421e761256fc34af5a0c0"
+    },
+    "rule_97": "enacted in v1.68, implemented in MAIN v1.8.3, mounted in v1.69; Legacy CI now judges the registered-set cases",
+    "invariant_84": "recorded as not held for the '1.25 MiB or less' figure (two of four MAIN v1.8.4 soak samples); the text is not edited and the decision is the Owner's",
+    "new_articles_or_invariants": 0,
+    "known_mismatch": "the 'Limits' paragraph in the head comment of the mounted c_seed_curriculum.h still holds v1.8.2 sentences"
+  },
+  "labs": {
+    "repository": "CSY8515/Ultra-Brain-Labs",
+    "release": "v1.1.0",
+    "state": "unchanged"
+  },
+  "owner_directive_wording_corrected": [
+    "'43 counterexamples pointed out by the 8th judgment': the judgment ran 41; 43 is the builder's count with 2 disclosed limits",
+    "'unregistered verb/object attacks': six kinds; 13 of the 43 were clauses of registered verbs (single EXECUTE/WRITE, connective)",
+    "'D3: all 32 clauses visible': 32 is the window; the waiting evidence lists every clause",
+    "'D4: entry points unified behind the commander gate': two typed-command entry points are gated; raw primitives, the daemon's data channel and other processes are not; the console's approval is a dialog",
+    "'complete', 'zero counterexamples', 'defect-free', 'certified': not claimed by the builder; nothing here is a certification",
+    "'four-model line-up with Fable 5.1': Fable 5.1 could not be run in this environment (NOT_RUN); no other model's output is presented as Fable 5.1's",
+    "'1.25 MiB': exceeded in two of four v1.8.4 samples"
+  ],
+  "not_measured": [
+    "the share of real commands that wait under the closed lexicon",
+    "what moves the soak job peak",
+    "the cost of the closed-lexicon check alone",
+    "the warm round trip of the v1.8.4 engine (0.244 ms is a pre-cortex build of 2026-11-11)",
+    "local execution of the built runners (Smart App Control)"
+  ],
+  "evaluation": {
+    "document": "EVALUATION_STAGE8_V184.md",
+    "builder": {
+      "model": "Claude Fable 5.2",
+      "role": "wrote v1.8.0 to v1.8.4; its record is section 1, its reproduction section 4"
+    },
+    "judges": [
+      {
+        "model": "Claude Opus 5.5",
+        "id": "claude-opus-5-5",
+        "role": "9th adversarial judgment, independent run, text unedited",
+        "verdicts": {
+          "question_1_43_counterexamples_completely_blocked": "partly established",
+          "question_2_owner_sovereignty_completely_established": "partly established",
+          "question_3_defect_free_deterministic_security_control_kernel": "not established"
+        },
+        "eighth_judgment_defects_13": {
+          "resolved": [
+            11
+          ],
+          "partly_resolved": [
+            2,
+            3,
+            9,
+            10,
+            13
+          ],
+          "not_resolved": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "changed_character": {
+            "12": "chat phrasing became specification by Owner decision; new over-waiting appeared"
+          }
+        },
+        "seventh_judgment_defects_10": {
+          "resolved_inside_the_commander_path": [
+            4
+          ],
+          "partly_resolved": [
+            6
+          ],
+          "not_resolved": [
+            1,
+            2,
+            3,
+            5,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        "defects_ranked": 14,
+        "name_given": "a deterministic command pipeline on a rule-based adaptive kernel, with a closed-lexicon syntactic filter in front of it"
+      },
+      {
+        "model": "Claude Sonnet 5.5",
+        "id": "claude-sonnet-5-5",
+        "role": "9th cross verification, second independent view, text unedited by the builder",
+        "verdicts": {
+          "question_1_43_counterexamples_completely_blocked": "partly established",
+          "question_2_owner_sovereignty_completely_established": "not established",
+          "question_3_defect_free_deterministic_security_control_kernel": "not established"
+        },
+        "note": "the reviewer reissued its text once at the builder's request to replace one sentence that quoted a fragment of a source line; the two versions differ in that line only; no verdict or figure changed"
+      }
+    ],
+    "not_run": [
+      {
+        "model": "Claude Fable 5.1",
+        "status": "NOT_RUN",
+        "reason": "not among the models that could be run independently in this environment; no other model's output is presented as Fable 5.1's"
+      }
+    ],
+    "independence_limit": "all models are products of the same company; this is not a third-party review and not a certification",
+    "what_held": [
+      "the 43 counterexamples and their variants (64 inputs by Opus, 47 by Sonnet): 0 reached the engine through the gated paths",
+      "no input holding an unregistered word passed (both reviews)",
+      "bounds (32/33 clauses, 128/129 bytes) and the window gave no bypass; a 1,024-clause command lists 1,024 clauses",
+      "no connective weakened a judgment",
+      "1,440 generated variants of dangerous seeds: 0 passed (Sonnet)",
+      "fast root function against the byte-walk reference: 0 differences in 300,000 random inputs (Opus)",
+      "no divergence found between the C header and the Python host by reading (Opus)",
+      "early exit and token non-consumption confirmed with an engine double"
+    ],
+    "new_findings": [
+      "WRITE x public noun passes without the Owner: receipt, golden, digest, hash, chain, sealed, header, engine, runner, daemon, dock are classed public (312 of 2,380 verb-noun commands)",
+      "READ x protected noun passes without the Owner (120 of 2,380): read secrets, show password, read owner key",
+      "the version literal accepts any dotted number: set engine 10.0.0.1 passes",
+      "the monitor console's probe button skips the clause dialog and shows a 39-character preview",
+      "raw paths without a gate: metabolism_dock.run_command, DockSession.command / cycle, the resident daemon's chunk function, the commander's internal cycle function with a hand-made dispatch",
+      "the entry-point test's regular expression catches 0 of 5 variants",
+      "the registered word pair 'for maturity' forms the root 'format': a formal command waits at risk 3",
+      "radar-evading spellings wait at risk 2 instead of 3",
+      "an overflow-only waiting evidence has an empty reason list",
+      "the Python window function accepts a negative start"
+    ],
+    "builder_reproduction": {
+      "method": "MAIN v1.8.4 source, engine creation replaced by a recording function; no key, Owner file, executable or window",
+      "eighth_43": {
+        "commands": 43,
+        "engine_reached_without_owner": 0
+      },
+      "read_x_protected": {
+        "commands": 11,
+        "engine_reached_without_owner": 11,
+        "rows": {
+          "read secrets": "ENGINE_REACHED / gate risk 1",
+          "show password": "ENGINE_REACHED / gate risk 1",
+          "get credentials": "ENGINE_REACHED / gate risk 1",
+          "list tokens": "ENGINE_REACHED / gate risk 1",
+          "view key": "ENGINE_REACHED / gate risk 1",
+          "read owner key": "ENGINE_REACHED / gate risk 1",
+          "show root password": "ENGINE_REACHED / gate risk 1",
+          "list keys of the owner": "ENGINE_REACHED / gate risk 1",
+          "read registry": "ENGINE_REACHED / gate risk 1",
+          "status secrets": "ENGINE_REACHED / gate risk 1",
+          "report password": "ENGINE_REACHED / gate risk 1"
+        }
+      },
+      "write_x_public": {
+        "commands": 15,
+        "engine_reached_without_owner": 15,
+        "rows": {
+          "write receipt": "ENGINE_REACHED / gate risk 1",
+          "add receipts": "ENGINE_REACHED / gate risk 1",
+          "update golden headers": "ENGINE_REACHED / gate risk 1",
+          "store digest": "ENGINE_REACHED / gate risk 1",
+          "save hash": "ENGINE_REACHED / gate risk 1",
+          "set chain": "ENGINE_REACHED / gate risk 1",
+          "store sealed receipt": "ENGINE_REACHED / gate risk 1",
+          "write golden digest": "ENGINE_REACHED / gate risk 1",
+          "append receipts to log": "ENGINE_REACHED / gate risk 1",
+          "set engine": "ENGINE_REACHED / gate risk 1",
+          "put runner": "ENGINE_REACHED / gate risk 1",
+          "set daemon": "ENGINE_REACHED / gate risk 1",
+          "update dock": "ENGINE_REACHED / gate risk 1",
+          "set time": "ENGINE_REACHED / gate risk 1",
+          "set date": "ENGINE_REACHED / gate risk 1"
+        }
+      },
+      "numbers_and_versions": {
+        "commands": 6,
+        "engine_reached_without_owner": 5,
+        "rows": {
+          "set engine 10.0.0.1": "ENGINE_REACHED / gate risk 1",
+          "update runner to 192.168.0.1": "ENGINE_REACHED / gate risk 1",
+          "set engine 0.0.0.0 to 255.255.255.255": "ENGINE_REACHED / gate risk 1",
+          "read status 9999999999999999999999999999999999999999": "ENGINE_REACHED / gate risk 0",
+          "read status v99999999999999999999.1": "ENGINE_REACHED / gate risk 0",
+          "read status v1": "OWNER_WAIT / gate risk 2"
+        }
+      },
+      "read_verb_as_object": {
+        "commands": 5,
+        "engine_reached_without_owner": 5,
+        "rows": {
+          "write report": "ENGINE_REACHED / gate risk 1",
+          "set status": "ENGINE_REACHED / gate risk 1",
+          "add list": "ENGINE_REACHED / gate risk 1",
+          "put view": "ENGINE_REACHED / gate risk 1",
+          "store get": "ENGINE_REACHED / gate risk 1"
+        }
+      },
+      "without_a_connective": {
+        "commands": 2,
+        "engine_reached_without_owner": 1,
+        "rows": {
+          "write note read status": "ENGINE_REACHED / gate risk 1",
+          "write note and read status": "OWNER_WAIT / gate risk 1"
+        }
+      },
+      "korean_connective_only": {
+        "commands": 2,
+        "engine_reached_without_owner": 1,
+        "rows": {
+          "read status 그리고 show ledger": "ENGINE_REACHED / gate risk 1",
+          "상태 읽어": "OWNER_WAIT / gate risk 2"
+        }
+      },
+      "attacks_that_failed": {
+        "commands": 9,
+        "engine_reached_without_owner": 0,
+        "rows": {
+          "ask owner": "OWNER_WAIT / gate risk 3",
+          "request token": "OWNER_WAIT / gate risk 3",
+          "escalate": "OWNER_WAIT / gate risk 2",
+          "write note to owner": "OWNER_WAIT / gate risk 3",
+          "write note show ledger": "OWNER_WAIT / gate risk 3",
+          "write memory": "OWNER_WAIT / gate risk 2",
+          "note write": "OWNER_WAIT / gate risk 2",
+          "read write note": "OWNER_WAIT / gate risk 2",
+          "read run build": "OWNER_WAIT / gate risk 2"
+        }
+      },
+      "radar_evasion": {
+        "commands": 18,
+        "engine_reached_without_owner": 1,
+        "rows": {
+          "read s hut down": "OWNER_WAIT / gate risk 2",
+          "read sh ut down": "OWNER_WAIT / gate risk 2",
+          "read f o r m a t": "OWNER_WAIT / gate risk 2",
+          "read r m": "OWNER_WAIT / gate risk 2",
+          "read r_m": "OWNER_WAIT / gate risk 2",
+          "read d_d": "OWNER_WAIT / gate risk 2",
+          "read de-l": "OWNER_WAIT / gate risk 2",
+          "read rmx": "OWNER_WAIT / gate risk 2",
+          "read dro p": "OWNER_WAIT / gate risk 2",
+          "read in it": "OWNER_WAIT / gate risk 2",
+          "read k i l l": "OWNER_WAIT / gate risk 2",
+          "read zap": "OWNER_WAIT / gate risk 2",
+          "read scrub disk": "OWNER_WAIT / gate risk 2",
+          "read 32 system": "ENGINE_REACHED / gate risk 1",
+          "read rm0": "OWNER_WAIT / gate risk 3",
+          "read dd2": "OWNER_WAIT / gate risk 3",
+          "read rm_rf": "OWNER_WAIT / gate risk 3",
+          "read init0": "OWNER_WAIT / gate risk 3"
+        }
+      },
+      "over_waiting": {
+        "commands": 7,
+        "engine_reached_without_owner": 0,
+        "rows": {
+          "show status for maturity": "OWNER_WAIT / gate risk 3",
+          "show information": "OWNER_WAIT / gate risk 3",
+          "list killed tests": "OWNER_WAIT / gate risk 3",
+          "read formatted report": "OWNER_WAIT / gate risk 3",
+          "read the reset log": "OWNER_WAIT / gate risk 3",
+          "show drop count": "OWNER_WAIT / gate risk 3",
+          "read status v1": "OWNER_WAIT / gate risk 2"
+        }
+      },
+      "verb_noun_sweep": {
+        "verbs": 35,
+        "nouns": 68,
+        "commands": 2380,
+        "passed_without_owner": 856,
+        "by_cell": {
+          "READ x public": 312,
+          "READ x state": 112,
+          "READ x protected": 120,
+          "WRITE x public": 312
+        },
+        "bare_write_verbs_passing": [
+          "add",
+          "append",
+          "put",
+          "save",
+          "set",
+          "store",
+          "update",
+          "write"
+        ]
+      },
+      "verb_noun_noun_sweep_non_read": {
+        "commands": 124848,
+        "passed_without_owner": 12168,
+        "all_write_x_public_x_public": true
+      },
+      "registered_word_pairs_forming_a_root": {
+        "words": 117,
+        "pairs": 13689,
+        "single_words_with_a_root": [
+          "delete",
+          "drop",
+          "erase",
+          "kill",
+          "purge",
+          "remove",
+          "rm",
+          "wipe"
+        ],
+        "forming": [
+          [
+            "for",
+            "maturity"
+          ],
+          [
+            "system",
+            "32"
+          ]
+        ]
+      },
+      "raw_paths": {
+        "metabolism_dock.run_command('read status and format c:')": "ENGINE_REACHED",
+        "commander internal cycle function with a hand-made dispatch of 'format c:'": "cycles served 1"
+      },
+      "console": {
+        "probe_branch_skips_clause_dialog": true,
+        "probe_dialog_shows_the_dangerous_clause": false,
+        "approval_dialog_for_601_clauses": {
+          "bytes": 2409,
+          "gate": "OWNER",
+          "lines": 605,
+          "chars": 17482,
+          "line_of_format_c": 603,
+          "first_line": "이 지휘는 오너 승인이 필요합니다 (게이트 위험도 3)."
+        },
+        "window_opened": false
+      },
+      "entry_point_regex": {
+        "samples": 5,
+        "caught": 0,
+        "allowed_files": 4
+      },
+      "window_function": {
+        "first_clause_64_of_70": 6,
+        "first_clause_minus_5": 27
+      },
+      "overflow_only_evidence": {
+        "bytes": 3583,
+        "status": "OWNER_WAIT",
+        "clauses_listed": 512,
+        "reasons": [],
+        "curriculum_status": "OVERFLOW"
+      },
+      "figures": {
+        "golden": 184,
+        "golden_distinct": 184,
+        "corpus": 3520,
+        "digest": "0xFC83EB60",
+        "lexicon_problems": [],
+        "of_43_with_a_root_or_radar_hit": 20
+      },
+      "approval_and_proof_defects": "si_owner.py and si_refactor.py have no diff between v1.8.3 and v1.8.4; not rerun by the builder this time (reproduced at the 8th judgment on the same code)"
+    },
+    "builder_accepts_as_overclaims_or_errors": [
+      "the release title 'Gated Entry Points' and the specification title's 'ironclad'",
+      "'the console asks in a dialog that lists every clause': not on the probe path",
+      "'the text of a waiting clause is shown to the Owner': the signing tool and the probe path do not show it",
+      "'the registered lexicon holds no root': a word pair does",
+      "'Korean commands always wait': a command whose only Hangul is a registered connective passes; the 8th judgment had already flagged this sentence and the builder repeated it",
+      "'writes to state wait' (D1): only for nouns classed state or protected",
+      "matrix cell count: 12 in the notes, 15 in the module text; the matrix is 6 by 3",
+      "soak samples: three in MAIN's committed notes and evidence, four in Legacy v1.69 and the GitHub release body",
+      "'all 43 ran a cycle on v1.8.3': the 8th judgment ran 41; the builder measured 43 / 0 on the two tags for this release"
+    ]
+  }
+}
