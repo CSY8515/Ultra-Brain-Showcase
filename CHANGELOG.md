@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.2.1 — 2026-11-13
+
+6th-judgment fixes (Ultra Brain v1.8.1) and the 7th adversarial re-judgment.
+
+- `BENCHMARK_V1.8.1.md`: measured figures of Ultra Brain v1.8.1, Ultra-Brain-Legacy v1.67 and Ultra-Brain-Labs v1.1.0. Both full-regression runs are recorded: the first ended 6,789 / 42 / 40 / 17 because an existing product test searches a JSON dump for the port string `9443` and a random SHA-256 digest contained it; the second ended 6,790 / 41 / 40 / 17 with 0 new regressions. The slower host-cost sample of v1.8.1 is recorded as measured.
+- `EVALUATION_STAGE8_V181.md`: the builder's record (Claude Fable 5.2) and the unedited 7th adversarial judgment by Claude Opus 5.5. Verdicts are unchanged from the 6th: partly / partly / not established. Of the ten 6th-judgment defects one is resolved, eight partly, one not; new defects were found in v1.8.1. The builder reproduced the claims and lists six overclaims of the v1.8.1 release notes.
+- `evidence/05-v181-v167-benchmark.json`: the same figures in machine-readable form.
+- `README.md`: repository table (v1.8.1, v1.67), new #5 section.
+- Corrections recorded: 1,286,144 B is 1.23 MiB; the 6th judgment ranked ten defects, not nine; "0 % hallucination closed loop" is not what the slot-bound rule gives.
+- No source code of the private repository is published. Nothing here is a certification.
+
 ## v1.2.0 — 2026-11-13
 
 Stage 8 Small Intelligence Commander: benchmark ledger and the 6th cross-appraisal.

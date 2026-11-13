@@ -1,0 +1,132 @@
+{
+  "schema": "ultra-brain-showcase-benchmark/5",
+  "compiled_at": "2026-11-13T19:10:00+09:00",
+  "note": "Every number carries its provenance. CI numbers come from GitHub Actions windows-latest runs on the named commits. Local execution of the v1.8.1 build is NOT_RUN (Smart App Control). Whether a defect is resolved is judged by the 7th adversarial judgment, not by this file. Nothing here is a certification.",
+  "main": {
+    "repository": "CSY8515/Ultra-Brain (private)",
+    "release": "v1.8.1",
+    "release_url": "https://github.com/CSY8515/Ultra-Brain/releases/tag/v1.8.1",
+    "code_commit": "3c51e159be93f9393387a68012286d0588d38902",
+    "release_commit": "9f19b8828977a2c40095f8cec1edae2033d7037a",
+    "trigger": "6th adversarial judgment of v1.8.0 (Claude Opus 5.5): ten ranked defects, nine counterexamples reproduced by the builder",
+    "ci": {
+      "run": 43392553181,
+      "conclusion": "success",
+      "first_attempt": true,
+      "window_utc": "2026-11-13T08:21:13Z to 2026-11-13T08:22:30Z",
+      "judged_real_process_checks": "10/10 PASS",
+      "unit_tests": "238/238 PASS (154 + 84)",
+      "unit_tests_added_since_v180": 18,
+      "clang_build": {"version": "20.1.8", "flags": "-std=c11 -O2 -Wall -Wextra -pedantic -Werror", "warnings": 0, "output_bytes": 265728, "limit_bytes": 307200},
+      "msvc_build": {"flags": "/utf-8 /W4 /WX", "warnings": 0, "selftest": "17/17"},
+      "golden_receipts_sha256": "b53b511ed937b75cb83d63e37ace33b5ab7afbfbbddfbf73f35d5cab575149dc",
+      "golden_receipts_state": "unchanged; engine tests PASS",
+      "cycle_path": "eight MAIN headers pinned to their v1.7.91 SHA-256; 28 frames per cycle, 55 per cortex query"
+    },
+    "daemon_soak": {
+      "seconds": 30,
+      "chunks": 8321,
+      "rotations": 130,
+      "cycles_per_second": 277.2,
+      "job_limit_bytes": 15728640,
+      "job_peak_process_memory_used": 1286144,
+      "job_peak_mib": 1.2266,
+      "peak_working_set": 3239936,
+      "peak_commit": 835584,
+      "idle_seconds": 2.0,
+      "idle_engine_cpu_seconds": 0.0,
+      "history_job_peak": {"v1.7.91": 1204224, "v1.8.0": 1273856, "v1.8.1": 1286144}
+    },
+    "commander_real_engine": {
+      "read status": {"status": "REPORTED", "frames_received_for_the_cycle": 28, "first_difference": 0, "dna11": 98797486632},
+      "delete system now, no Owner token": {"status": "OWNER_WAIT", "engine_cycles_served": 0, "owner_action": "DISPATCH", "owner_subject": "dna11:30508431342:sha256:b446e6fb4690cfca28e813ee711eed7de432054f8cf739765fa8ee3685e7b65a"},
+      "format c:, no Owner token": {"status": "OWNER_WAIT", "engine_cycles_served": 0, "in_v1.8.0": "passed (risk 2, no gate)"},
+      "token issued for the reported subject": "runs once; the same token on the next cycle is refused"
+    },
+    "host_cost_ci_single_sample": {
+      "accept_decompose_us": 148.1,
+      "report_us": 448.6,
+      "cycle_round_trip_ms": 3.987,
+      "v1.8.0_samples": {"accept_decompose_us": [183.4, 188.8], "report_us": [55.5, 47.4], "cycle_round_trip_ms": [0.718, 0.741]},
+      "note": "first cycle of a fresh session on a shared runner, one sample; the report stage does more work in v1.8.1; not a repeated measurement"
+    },
+    "full_regression": {
+      "code_commit": "3c51e15",
+      "cases": 6888,
+      "interpreter_sha256": "ef8f51028ac5329641985112f8efb1c2d4c47c86b8011ddf7e6fae21e2b4e5a1",
+      "first_run": {
+        "observed_counts": {"PASS": 6789, "FAIL": 42, "ERROR": 40, "SKIP": 17},
+        "new_regressions": 1,
+        "case": "tests.test_product_git_mutation.GitMutationRepositoryTests.test_remote_port_and_credentials_do_not_escape_but_invalidate",
+        "cause": "the test asserts that the port string 9443 is absent from a JSON dump that also holds random SHA-256 digests; the staged digest of that run began 4b969443792c",
+        "probability_per_run": "about 0.5 % (five digests, 61 positions each, 16^-4)",
+        "isolated_reruns": "6/6 PASS",
+        "product_files_changed_since_v180": 0,
+        "disposition": "existing probabilistic test defect; not fixed by Owner instruction; open item",
+        "result_sha256": "726f8fd73855b296bb2b1c4fe422c966ce924d74b4be76c2008c1e7b893a92fe"
+      },
+      "second_run": {
+        "observed_counts": {"PASS": 6790, "FAIL": 41, "ERROR": 40, "SKIP": 17},
+        "new_regressions": 0,
+        "missing_cases": 0,
+        "source_changed_during_run": 0,
+        "designated_core": "191/191",
+        "window_utc": "2026-11-13T09:01:35Z to 2026-11-13T09:40:23Z",
+        "result_sha256": "fe9fa80746378cb7bf27334367e69a20674ce045108952d50a0572fc8415f806"
+      },
+      "raw_all_pass": false,
+      "historical_owner_exempt_fail_error": 81,
+      "scope_note": "the 6,888 case IDs predate the commander; its tests are among the 238 CI unit tests"
+    },
+    "changes_for_the_sixth_judgment": {
+      "1_decision_and_nonce": "Owner tokens: HMAC-SHA256 under the DPAPI-bound experience-seal key, bound to one action and one subject, 300 s; integers and dicts refused",
+      "2_persistence": "used tokens appended to a hash-chained MAC'd ledger before the action; a damaged ledger fails closed",
+      "3_r0_prover": "same tokens, same physical lines, same whitespace presence, same logical line ends",
+      "4_verified_flag": "frozen receipt carrying its reconciliation evidence; the report reconciles again",
+      "5_fill_rule": "number tokens in order and sign equal the template's fields; non-ASCII numerals and digit-separator-digit refused; same rule in the C header",
+      "6_release_note_overclaim": "corrected in the v1.8.1 notes",
+      "7_self_tool_protection": "files must be named; paths normalised; decision-line files protected",
+      "8_proof_bits": "derived from artifacts; two CI-only bits are attested and the Owner token signs that; R1/R2 cannot become PROVEN",
+      "9_untested_paths": "C/Python slot-order parity test and Owner-token engine tests added; Windows approval binding not implemented",
+      "10_local_execution": "unchanged: NOT_RUN"
+    },
+    "limits_stated_by_the_builder": [
+      "an Owner token proves the holder of the Owner's DPAPI key (any process of the same Windows user), not a person; no Windows Hello binding",
+      "a token ledger rolled back to an earlier length is not detected; the 300 s freshness window bounds a replay",
+      "the report check cannot see an error shared by engine and mirror, or evidence fabricated in the same process",
+      "no diff actuator; no refactoring performed",
+      "rule-based: no language understanding, no model"
+    ],
+    "commander_contract_header": {"bytes": 55628, "git_blob": "fd4f1652835211c6632a1ed3d97a6652bc79c097", "sha256": "569452eea8d789d3df5bf4ce200bf934c42059eb8f43cfc8580c1a658248758c"}
+  },
+  "legacy": {
+    "repository": "CSY8515/Ultra-Brain-Legacy (public)",
+    "release": "v1.67",
+    "release_url": "https://github.com/CSY8515/Ultra-Brain-Legacy/releases/tag/v1.67",
+    "tag_commit": "e583aafcc791eb1477b0084870419392f8fd58aa",
+    "ci_runs": {"tag": 43405793943, "main": 43405788721, "conclusion": "success"},
+    "clang": {"version": "20.1.8", "warnings": 0, "runner_bytes": 267776, "mesh_bytes": 263680},
+    "msvc": {"flags": "/utf-8 /W4 /WX", "warnings": 0},
+    "runner": "25/25, 18 flags all exit 0",
+    "mesh": "32/32",
+    "commander_header_identical_to_main_v181": true
+  },
+  "labs": {
+    "repository": "CSY8515/Ultra-Brain-Labs (public)",
+    "release": "v1.1.0",
+    "tag_commit": "a69a0cd3368475b56e28fd9492cf2b351232dcf1",
+    "state": "unchanged since Showcase v1.2.0; pipe IPC average 0.027-0.051 ms over three CI runs (evidence/04)"
+  },
+  "owner_directive_figures_corrected": [
+    {"claim": "1,286,144 B = 1.22 MiB", "fact": "1.2266 MiB: 1.23 rounded, 1.22 truncated"},
+    {"claim": "nine defects", "fact": "the 6th judgment ranked ten defects; nine counterexamples were reproduced"},
+    {"claim": "0 % hallucination closed loop held", "fact": "the slot-bound rule checks where a number came from and where it sits; it does not guarantee a report is true; the verdict is the 7th judgment's"},
+    {"claim": "arbitrary nonces blocked", "fact": "integers are refused; a process of the same Windows user can still mint a token"}
+  ],
+  "not_measured": [
+    "warm round-trip median of the v1.8.1 engine",
+    "repeated host-cost measurements",
+    "FAST advice path latency, restore time, 24-hour soak",
+    "execution on the Owner PC and in Windows Sandbox for v1.8.1"
+  ]
+}
