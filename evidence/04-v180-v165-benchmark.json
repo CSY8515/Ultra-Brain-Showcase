@@ -1,0 +1,139 @@
+{
+  "schema": "ultra-brain-showcase-benchmark/4",
+  "compiled_at": "2026-11-13T17:30:00+09:00",
+  "note": "Every number carries its provenance. CI numbers come from GitHub Actions windows-latest runs (image windows-2025-vs2026, Windows Server 2025) on the named commits; local numbers name the date and the engine hash. A CI run is an execution record, not a notarization. Nothing here is a certification.",
+  "main": {
+    "repository": "CSY8515/Ultra-Brain (private)",
+    "release": "v1.8.0",
+    "release_url": "https://github.com/CSY8515/Ultra-Brain/releases/tag/v1.8.0",
+    "code_commits": ["893a398f76a8627f26a00edd39c82d3c3411eea3", "da6debe900c92bcaaacabb4423d9c15c5131b1ab"],
+    "release_commit": "f5313a1b0e4214a248e67f9d0eb5128cc1df59a9",
+    "ci_run": 43381020952,
+    "ci_conclusion": "success",
+    "ci_window_utc": "2026-11-13T06:46:21Z to 2026-11-13T06:47:52Z",
+    "ci_failed_run": {
+      "run": 43380719538,
+      "commit": "893a398",
+      "cause": "two commander engine tests expected the session frame counts after BYE while the host recorded them before it (84/7 instead of 85/8); every C-side step had passed; fixed in da6debe"
+    },
+    "judged_real_process_checks": "10/10 PASS (--selftest 17/17, --resilience, --benchmark, --guards, --metabolism, --chipset, --memory, --legacy, --cortex, --commander)",
+    "unit_tests": "220/220 PASS (136 + 84)",
+    "clang_build": {"version": "20.1.8", "flags": "-std=c11 -O2 -Wall -Wextra -pedantic -Werror", "warnings": 0, "output_bytes": 266240, "limit_bytes": 307200, "previous_release_bytes": 241664},
+    "msvc_build": {"flags": "/utf-8 /W4 /WX /std:c11 /O2", "warnings": 0, "selftest": "17/17", "version": "not printed by this run (cl /nologo)"},
+    "runner_imports": {"dlls": ["KERNEL32.dll"], "socket_or_http_symbols": 0, "source": "import table of the local clang 19.1.5 build of v1.8.0 (272,896 B); read, not executed"},
+    "golden_receipts": {"sha256": "b53b511ed937b75cb83d63e37ace33b5ab7afbfbbddfbf73f35d5cab575149dc", "state": "unchanged since v1.7.88; the real engine reproduces every field (CI)"},
+    "overhead_invariant": {
+      "definition": "the engine cycle path holds no commander code and no commander frame",
+      "frames_per_cycle": 28,
+      "frames_per_cortex_query": 55,
+      "new_frame_ops": 0,
+      "host_frame_ops": 30,
+      "cycle_path_headers_pinned_to_v1791_sha256": 8,
+      "commander_symbols_on_cycle_path": 0
+    },
+    "commander_real_engine": {
+      "read status": {"status": "REPORTED", "frames_received_for_the_cycle": 28, "first_difference": 0, "dna11": 98797486632, "digest": "0x8ae2c2278fb9b1b3", "receipt_tag": "0x48a55744d0e44707", "end_checksum": "0xec06555a"},
+      "delete system now, no Owner nonce": {"status": "OWNER_WAIT", "engine_cycles_served": 0, "dna11": 30508431342, "risk": 3}
+    },
+    "host_cost_ci_samples": {
+      "accept_decompose_us": [183.4, 188.8],
+      "report_us": [55.5, 47.4],
+      "cycle_round_trip_ms": [0.718, 0.741],
+      "sample": "first cycle of a fresh session, one sample per CI run (43380719538, 43381020952), Python 3.13 host"
+    },
+    "daemon_soak": {
+      "seconds": 30,
+      "chunks": 4332,
+      "rotations": 67,
+      "job_limit_bytes": 15728640,
+      "job_peak_process_memory_used": 1273856,
+      "job_peak_mib": 1.2148,
+      "job_peak_mb_decimal": 1.2739,
+      "peak_working_set": 3239936,
+      "peak_commit": 831488,
+      "idle_seconds": 2.0,
+      "idle_engine_cpu_seconds": 0.0,
+      "history_job_peak": {"v1.7.90 run 43304755869": 1253376, "v1.7.91 run 43332873004": 1204224, "v1.8.0 run 43380719538": 1294336, "v1.8.0 run 43381020952": 1273856}
+    },
+    "full_regression": {
+      "code_commit": "da6debe",
+      "cases": 6888,
+      "observed_counts": {"PASS": 6790, "FAIL": 41, "ERROR": 40, "SKIP": 17},
+      "designated_core": "191/191",
+      "new_regressions": 0,
+      "missing_cases": 0,
+      "source_changed_during_run": 0,
+      "tracked_files_frozen_by_sha256": 1896,
+      "raw_all_pass": false,
+      "historical_owner_exempt_fail_error": 81,
+      "window_utc": "2026-11-13T06:46:55Z to 2026-11-13T07:23:38Z",
+      "interpreter_sha256": "ef8f51028ac5329641985112f8efb1c2d4c47c86b8011ddf7e6fae21e2b4e5a1",
+      "result_sha256": "b6e948ed169271bf1637a44656dd183a9cd82e907d3d1c237e3a3f64c1c611cd",
+      "case_results_sha256": "56c4bc183bedf52ecdd5b6ab4a35caf3da73df3651bd78d4bfbf36a6dc3d8925",
+      "scope_note": "the 6,888 case IDs predate v1.8.0; the commander tests are among the 220 CI unit tests, not among these"
+    },
+    "commander_contract_header": {"bytes": 52380, "git_blob": "24d9428950cd7b1cfa36182c3c7d82d68f38f402", "sha256": "82eb4bb97fb013c8c8ddbd994ffba5dc2fc067e1523a9348c2be21f27c122ca4"},
+    "golden_values": {"dna11": {"delete system now / 1": 30508431342, "read status / 1": 98797486632, "read status / 2": 95421235163}, "refactor_proof_record_hex": "003f020042755d53b179379e78563412"},
+    "local": {"builds": "clang 19.1.5 -Werror and MSVC 14.44 /utf-8 /W4 /WX: 0 warnings", "execution": "NOT_RUN (Smart App Control, WinError 4551)"}
+  },
+  "legacy": {
+    "repository": "CSY8515/Ultra-Brain-Legacy (public)",
+    "release": "v1.65",
+    "release_url": "https://github.com/CSY8515/Ultra-Brain-Legacy/releases/tag/v1.65",
+    "tag_commit": "bcd8e1a7f246a6d5a72b68abcc42a21b0132a4b4",
+    "docs_follow_up_commit": "2f91e035dcf4cb2d08eeebc2e5c30f76879ec27e",
+    "ci_runs": {"tag": 43387715941, "main": 43387565963, "conclusion": "success"},
+    "clang": {"version": "20.1.8", "warnings": 0, "runner_bytes": 267776, "mesh_bytes": 263680},
+    "msvc": {"flags": "/utf-8 /W4 /WX", "warnings": 0},
+    "runner": "25/25 (CHECK 25 commander), 18 flags all exit 0",
+    "mesh": "32/32 (TEST 32 commander)",
+    "alignment_16_byte_structures": {"runner": 38, "mesh": 37},
+    "commander_header_identical_to_main": true
+  },
+  "labs": {
+    "repository": "CSY8515/Ultra-Brain-Labs (public)",
+    "release": "v1.1.0",
+    "release_url": "https://github.com/CSY8515/Ultra-Brain-Labs/releases/tag/v1.1.0",
+    "tag_commit": "a69a0cd3368475b56e28fd9492cf2b351232dcf1",
+    "imports": "KERNEL32.dll only, both tools, both compilers",
+    "assets": {
+      "agent_wire_ipc.exe": {"bytes": 23552, "sha256": "cf82317d5a545842d99b4a8299b5aae58147545c3c0db1e7fa848d3f54178c77"},
+      "win_zero_cli.exe": {"bytes": 5120, "sha256": "b4c7cd352bb121906459039a868ae045f0322cd7f295e4441a9961767e0e8df0"}
+    },
+    "pipe_bench_1000_round_trips_ms": [
+      {"run": 43373628526, "ref": "rc/v1.1.0", "build": "clang 20.1.8", "min": 0.005, "p50": 0.031, "avg": 0.040, "p99": 0.066, "max": 7.859, "peak_working_set_kib": 2960},
+      {"run": 43373628526, "ref": "rc/v1.1.0", "build": "MSVC 19.51.36260", "min": 0.018, "p50": 0.026, "avg": 0.038, "p99": 0.063, "max": 9.770, "peak_working_set_kib": 2980},
+      {"run": 43374572593, "ref": "main", "build": "clang", "min": 0.012, "p50": 0.019, "avg": 0.027, "p99": 0.034, "max": 8.380, "peak_working_set_kib": 2988},
+      {"run": 43374572593, "ref": "main", "build": "MSVC", "min": 0.023, "p50": 0.038, "avg": 0.047, "p99": 0.071, "max": 8.555, "peak_working_set_kib": 2988},
+      {"run": 43374577834, "ref": "v1.1.0", "build": "clang", "min": 0.005, "p50": 0.020, "avg": 0.031, "p99": 0.036, "max": 11.382, "peak_working_set_kib": 2964},
+      {"run": 43374577834, "ref": "v1.1.0", "build": "MSVC", "min": 0.012, "p50": 0.038, "avg": 0.051, "p99": 0.067, "max": 15.026, "peak_working_set_kib": 2976}
+    ],
+    "note": "max is the first round trip after connecting; every receipt was verified; local execution NOT_RUN"
+  },
+  "measured_2026_11_11_local": {
+    "engine_sha256": "4f93428a9946753b94922d26e88ef9d8fb66b25dc552fb0dfad5c5d01881d6e9",
+    "engine_bytes": 193536,
+    "warm_round_trip_ms": {"median": 0.244, "p99": 0.811, "max": 1.047, "count": 1000},
+    "scope": "pre-cortex, pre-commander engine; not re-measured for v1.8.0"
+  },
+  "owner_directive_figures_corrected": [
+    {"claim": "1,273,856 B = 1.27 MiB", "fact": "1.21 MiB; 1.27 is decimal MB"},
+    {"claim": "4,000x faster than a cloud LLM", "fact": "no cloud model latency was measured; the ratio is not published"},
+    {"claim": "Labs IPC average 0.031-0.051 ms", "fact": "0.027-0.051 ms over three CI runs and two compilers"},
+    {"claim": "--commander 10/10", "fact": "10 judged real-process flags all PASS; --commander is one of them"},
+    {"claim": "MSVC 19.51 for the main build", "fact": "the main run does not print the compiler version; 19.51.36260 is what the Labs runs printed the same day"},
+    {"claim": "Azure runner CI notarization", "fact": "GitHub-hosted runner execution records; not a notarization or certification"},
+    {"claim": "DPAPI HMAC hardware seal, ledger encryption", "fact": "HMAC-SHA256 under a random key protected by Windows DPAPI for the current user profile; no hardware (TPM) binding was verified; HMAC is a signature, not encryption; the receipt ledger is a plaintext SHA-256 hash chain"},
+    {"claim": "SourceSeal over 1,619 files with 0 errors", "fact": "SourceSeal was neither renewed nor verified in v1.8.0; 1,619 is the v1.7.87 count of tracked files pinned in the source admission manifest (of 1,723); what v1.8.0 verified is that 1,896 tracked files kept their SHA-256 during the regression run"},
+    {"claim": "offline sandbox run", "fact": "NOT_RUN for v1.8.0; the only sandbox recording is the 2026-11-11 C-Seed-0 build"},
+    {"claim": "idle CPU 0.00 s, 0.0 %", "fact": "engine CPU time 0.0 s over a 2.0 s idle window inside the CI soak"}
+  ],
+  "not_measured": [
+    "warm round-trip median of the v1.8.0 engine",
+    "FAST advice path latency",
+    "cortex restore time",
+    "24-hour soak",
+    "any cloud model latency",
+    "execution on the Owner PC (Smart App Control) and in Windows Sandbox for v1.8.0"
+  ]
+}

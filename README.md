@@ -1,6 +1,46 @@
 # Ultra Brain Showcase
 
-쇼케이스 버전: `1.1.0` ([VERSION](VERSION)). 관련 저장소: [Ultra-Brain-Labs](https://github.com/CSY8515/Ultra-Brain-Labs) — C 런타임 없이 `KERNEL32.dll`만 쓰는 Windows CLI 레퍼런스(5,120 B 바이너리, SHA-256 `a535d15b…`)와 빌드·검증 가이드. 사령부 공개 저장소: [Ultra-Brain-Legacy](https://github.com/CSY8515/Ultra-Brain-Legacy) (v1.60).
+쇼케이스 버전: `1.2.0` ([VERSION](VERSION), [CHANGELOG](CHANGELOG.md)). 이 저장소는 성적표, 영수증, 검증 해시, 감정서만 싣습니다. 본체 소스는 싣지 않으며, 어떤 공인 기관의 인증도 아닙니다.
+
+| 저장소 | 버전 | 내용 |
+|---|---|---|
+| Ultra-Brain (비공개 본체) | v1.8.0 | C-Seed 엔진, 코텍스, Stage 8 소지능 사령탑 |
+| [Ultra-Brain-Legacy](https://github.com/CSY8515/Ultra-Brain-Legacy) (사령부) | [v1.65](https://github.com/CSY8515/Ultra-Brain-Legacy/releases/tag/v1.65) | 사양서, 사령탑 계약 헤더 마운트, 러너 25/25·메시 32/32 |
+| [Ultra-Brain-Labs](https://github.com/CSY8515/Ultra-Brain-Labs) | [v1.1.0](https://github.com/CSY8515/Ultra-Brain-Labs/releases/tag/v1.1.0) | `KERNEL32.dll`만 쓰는 Windows 도구 2종: 5,120 B CLI와 named pipe 에이전트 IPC |
+
+## #4 Stage 8 소지능 사령탑 — 실측 벤치마크와 6차 교차 감정 (2026-11-13)
+
+[BENCHMARK_V1.8.0.md](BENCHMARK_V1.8.0.md) · [EVALUATION_STAGE8.md](EVALUATION_STAGE8.md) · 원자료 [evidence/04-v180-v165-benchmark.json](evidence/04-v180-v165-benchmark.json)
+
+본체 Ultra Brain v1.8.0(코드 `da6debe`), 사령부 v1.65(`bcd8e1a`), Labs v1.1.0(`a69a0cd`)의 성적표입니다.
+
+| 항목 | 값 | 출처 |
+|---|---|---|
+| 전수 회귀 6,888건 (단일 실행) | **6,790 PASS / 41 FAIL / 40 ERROR / 17 SKIP**, 신규 회귀 0, 누락 0, 핵심 191/191 | 본체 `da6debe`, 2026-11-13 |
+| 실프로세스 판정 / 단위 테스트 | 10/10 PASS / 220/220 PASS | 본체 CI run 43381020952 |
+| 컴파일러 | Clang 20.1.8 `-Werror`·MSVC `/W4 /WX` 경고 0, 자가 시험 17/17 | 같은 run |
+| 상주 데몬 30초 soak | Job 최대 **1,273,856 B (1.21 MiB)**, 한도 15 MiB의 8.1 %. 유휴 2초 구간 CPU 0.0초 | 같은 run |
+| 결정론 | P6 기준 영수증 SHA-256 `b53b511e…` 불변. 사이클당 28 프레임, QUERY당 55 프레임. 사이클 경로 헤더 8개가 v1.7.91 바이트와 동일 | 같은 run |
+| 사령탑 실엔진 | `read status` → 보고 완료(28 프레임, 불일치 0). `delete system now`는 오너 nonce 없이 대기, 사이클 0 | 같은 run |
+| 사령부 도킹 | 러너 **25/25**, 메시 **32/32**, 계약 헤더 blob 동일 | Legacy run 43387715941 |
+| Labs 파이프 IPC | 1,000회 왕복 평균 **0.027 ~ 0.051 ms**, 첫 왕복 8 ~ 15 ms | Labs CI 세 run |
+| 엔진 warm 왕복 | 중앙값 0.244 ms는 2026-11-11 코텍스 이전 빌드의 값. **v1.8.0은 미측정** | evidence/02 |
+
+- 81건의 FAIL/ERROR는 역사적 오너 면제 집합입니다. raw ALL PASS가 아닙니다.
+- 로컬 개발기에서는 Smart App Control이 v1.8.0 빌드의 실행을 막아, 엔진 위의 수치는 모두 CI 표본입니다.
+- 오너 지시문의 수치 중 측정과 달랐던 것은 벤치마크 문서 §7·§8에 정정했습니다. 1,273,856 B는 1.27 MiB가 아니라 1.21 MiB입니다. 클라우드 LLM 대비 배수는 재지 않아 싣지 않았습니다. DPAPI는 하드웨어 키가 아니라 Windows 사용자 프로필 결속입니다. SourceSeal은 v1.8.0에서 검증하지 않았습니다. v1.8.0의 샌드박스 실행은 NOT_RUN입니다.
+
+**교차 감정 요약** (전문은 [EVALUATION_STAGE8.md](EVALUATION_STAGE8.md)):
+
+| 오너의 질문 | Claude Opus 5.5 6차 판정 |
+|---|---|
+| `si_report` 채움 규칙으로 환각 0 % 보고 폐회로가 성립했는가 | **부분 성립.** 정확한 이름은 "숫자 토큰 출처 필터". 값과 자리의 결속, 판정어, 전각 숫자·한국어 수사는 검사하지 않는다 |
+| 제86조 자가 리팩토링이 제78조 오너 주권에 종속되어 안전하게 가동되는가 | **부분 성립.** 순서와 검사는 코드로 강제되나 결정과 nonce를 호출자가 만들 수 있다. 실행기가 없어 수행된 정돈은 0건 |
+| "자가 정돈 사령탑을 갖춘 초경량 자율 인지 OS 커널"로 범주가 도약했는가 | **불성립.** 정확한 이름은 "규칙 기반 적응 커널 위에 얹은 결정론적 명령 파이프라인" |
+
+- 5차 판정이 "없다"고 한 사령탑은 최소 형태로 생겼습니다. 의미 이해, 자연어 추론, LLM 연결, 서명 배포는 여전히 없습니다.
+- 구현한 Claude Fable 5.2는 6차 판정의 반례 9건을 같은 코드에서 재현했고 전부 사실이었습니다. 릴리즈 노트의 "보고가 틀릴 수 있는 유일한 길은 잘못된 템플릿"이라는 문장은 과장이었다고 적었습니다.
+- 이 결함들은 본체 v1.8.0에 그대로 있습니다.
 
 ## #3 C-Seed-1 Cortex — 실측 벤치마크와 양대 AI 교차 감정 (2026-11-13)
 
