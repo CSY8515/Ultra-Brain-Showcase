@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.2.2 — 2026-11-13
+
+Compound-command gate (Ultra Brain v1.8.2), registered character set (v1.8.3) and the 8th adversarial judgment.
+
+- `BENCHMARK_V1.8.3.md`: measured figures of Ultra Brain v1.8.2 and v1.8.3 and Ultra-Brain-Legacy v1.68. Four CI runs per version, all success; one full-regression run per version, both 6,790 / 41 / 40 / 17 with 0 new regressions; eight soak samples (1,220,608 to 1,306,624 B) shown individually because the same binary varies by tens of thousands of bytes between runs.
+- `EVALUATION_STAGE8_V183.md`: the builder's record (Claude Fable 5.2) and the unedited 8th adversarial judgment by Claude Opus 5.5. Verdicts: partly / partly (established inside the commander path) / not established. Of the ten 7th-judgment defects none is resolved, two are partly resolved, eight are not. New findings: variants of radar words pass, a connective can weaken the judgment, three entry points bypass the gate, the waiting evidence lists only eight clauses. The builder reproduced the claims and lists eight overclaims of its own release notes and R&D report.
+- `evidence/06-v183-v168-benchmark.json`: the same figures in machine-readable form.
+- `README.md`: repository table (v1.8.3, v1.68), new #6 section.
+- Corrections recorded: 228,057 is the check count of the pre-implementation design prototype, not of the product; 1,232,896 B is 1.18 MiB and one sample of eight; the 7th judgment's Unicode-space finding concerns the R0 prover, not the command entrance; "ALL PASS" applies to the CI unit tests only; this repository has no CI of its own.
+- Legacy v1.68 mounts the v1.8.2 headers; the v1.8.3 headers are not mounted (on hold by Owner decision).
+- No source code of the private repository is published. Nothing here is a certification.
+
 ## v1.2.1 — 2026-11-13
 
 6th-judgment fixes (Ultra Brain v1.8.1) and the 7th adversarial re-judgment.

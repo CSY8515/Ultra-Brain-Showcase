@@ -1,0 +1,345 @@
+{
+  "schema": "ultra-brain-showcase-benchmark/6",
+  "compiled_at": "2026-11-13T22:30:00+09:00",
+  "note": "Every number carries its provenance. CI numbers come from GitHub Actions windows-latest runs on the named commits. Local execution of the builds is NOT_RUN (Smart App Control). Whether a defect is resolved is judged by the 8th adversarial judgment, not by this file. Nothing here is a certification.",
+  "main": {
+    "repository": "CSY8515/Ultra-Brain (private)",
+    "v1.8.2": {
+      "release_url": "https://github.com/CSY8515/Ultra-Brain/releases/tag/v1.8.2",
+      "code_commit": "b1b58fec92fe924bbe32441126017b777bdce1eb",
+      "release_commit": "142e1e16e30fd53faaa8667ce6ce4944356a68d5",
+      "scope": "Curriculum Meta Sector above the commander gate: clause decomposition, highest-risk escalation, destructive-command radar (Legacy Rules #94-#96); the compound-command defect of the 7th judgment",
+      "ci": {
+        "runs_on_code_commit": [
+          43415244486,
+          43415638646,
+          43415656480
+        ],
+        "run_on_release_commit": 43420829447,
+        "conclusion": "success (4/4)",
+        "first_attempt": true,
+        "judged_real_process_checks": "11/11 PASS",
+        "unit_tests": "262/262 PASS (178 + 84)",
+        "unit_tests_added_since_v181": 24,
+        "clang_build": {
+          "version": "20.1.8",
+          "flags": "-std=c11 -O2 -Wall -Wextra -pedantic -Werror",
+          "warnings": 0,
+          "output_bytes": 278016,
+          "limit_bytes": 307200
+        },
+        "msvc_build": {
+          "flags": "/utf-8 /W4 /WX",
+          "warnings": 0,
+          "selftest": "18/18"
+        },
+        "meta_sector_self_test": {
+          "golden_vectors": 63,
+          "corpus_commands": 2368,
+          "corpus_digest": "0xC9E2DCC6"
+        }
+      },
+      "daemon_soak": [
+        {
+          "run": 43415244486,
+          "seconds": 30,
+          "job_peak_process_memory_used": 1306624,
+          "job_peak_mib": 1.2461,
+          "peak_working_set": 3256320,
+          "cycles": 4311,
+          "idle_seconds": 2.0,
+          "idle_engine_cpu_seconds": 0.0
+        },
+        {
+          "run": 43415638646,
+          "seconds": 30,
+          "job_peak_process_memory_used": 1294336,
+          "job_peak_mib": 1.2344,
+          "peak_working_set": 3231744,
+          "cycles": 4188,
+          "idle_seconds": 2.0,
+          "idle_engine_cpu_seconds": 0.0
+        },
+        {
+          "run": 43415656480,
+          "seconds": 30,
+          "job_peak_process_memory_used": 1220608,
+          "job_peak_mib": 1.1641,
+          "peak_working_set": 3235840,
+          "cycles": 5017,
+          "idle_seconds": 2.0,
+          "idle_engine_cpu_seconds": 0.0
+        },
+        {
+          "run": 43420829447,
+          "seconds": 30,
+          "job_peak_process_memory_used": 1249280,
+          "job_peak_mib": 1.1914,
+          "peak_working_set": 3244032,
+          "cycles": 4245,
+          "idle_seconds": 2.0,
+          "idle_engine_cpu_seconds": 0.0
+        }
+      ],
+      "host_cost_us_accept_decompose": {
+        "read status": [
+          330.0,
+          381.6,
+          315.8
+        ],
+        "read status and show ledger": [
+          467.9,
+          390.2,
+          362.7
+        ]
+      },
+      "cycle_round_trip_ms_read_status": [
+        0.718,
+        0.783,
+        0.656
+      ],
+      "full_regression": {
+        "commit": "b1b58fe",
+        "PASS": 6790,
+        "FAIL": 41,
+        "ERROR": 40,
+        "SKIP": 17,
+        "new_regressions": 0,
+        "missing": 0,
+        "designated_core": "191/191",
+        "runs": 1,
+        "window_utc": "2026-11-13T11:15:06Z to 2026-11-13T11:52:07Z",
+        "result_sha256": "ebd1bfe56aa2aecba560ec28589b7cdcf267d2e3de4f8dba3e978ad2b6475a03"
+      }
+    },
+    "v1.8.3": {
+      "release_url": "https://github.com/CSY8515/Ultra-Brain/releases/tag/v1.8.3",
+      "code_commit": "2e90677ce150299d6782c19a2cdaed88f4e52c52",
+      "release_commit": "eed98d5f40e16e703cd16a43075e922df7ca1352",
+      "scope": "Rule #97 and invariant 85 of Legacy v1.68: a command with a character outside the registered set (Hangul syllables U+AC00-U+D7A3, printable ASCII, HT, LF, CR) or invalid UTF-8 is refused whole at accept",
+      "ci": {
+        "runs_on_code_commit": [
+          43424613973,
+          43424629130,
+          43424646445
+        ],
+        "run_on_release_commit": 43430495805,
+        "conclusion": "success (4/4)",
+        "first_attempt": true,
+        "judged_real_process_checks": "11/11 PASS",
+        "unit_tests": "265/265 PASS (181 + 84)",
+        "unit_tests_added_since_v182": 3,
+        "clang_build": {
+          "version": "20.1.8",
+          "flags": "-std=c11 -O2 -Wall -Wextra -pedantic -Werror",
+          "warnings": 0,
+          "output_bytes": 284160,
+          "limit_bytes": 307200
+        },
+        "msvc_build": {
+          "flags": "/utf-8 /W4 /WX",
+          "warnings": 0,
+          "selftest": "18/18"
+        },
+        "meta_sector_self_test": {
+          "golden_vectors": 81,
+          "registered_set_cases": 24,
+          "corpus_commands": 2368,
+          "corpus_digest": "0xDAE9EE5E"
+        },
+        "golden_receipts_sha256": "b53b511ed937b75cb83d63e37ace33b5ab7afbfbbddfbf73f35d5cab575149dc",
+        "golden_receipts_state": "unchanged; engine tests PASS",
+        "cycle_path": "eight MAIN headers pinned to their v1.7.91 SHA-256; 28 frames per cycle, 55 per cortex query"
+      },
+      "daemon_soak": [
+        {
+          "run": 43424613973,
+          "seconds": 30,
+          "job_peak_process_memory_used": 1249280,
+          "job_peak_mib": 1.1914,
+          "peak_working_set": 3239936,
+          "cycles": 7200,
+          "idle_seconds": 2.0,
+          "idle_engine_cpu_seconds": 0.0
+        },
+        {
+          "run": 43424629130,
+          "seconds": 30,
+          "job_peak_process_memory_used": 1290240,
+          "job_peak_mib": 1.2305,
+          "peak_working_set": 3252224,
+          "cycles": 4189,
+          "idle_seconds": 2.0,
+          "idle_engine_cpu_seconds": 0.0
+        },
+        {
+          "run": 43424646445,
+          "seconds": 30,
+          "job_peak_process_memory_used": 1290240,
+          "job_peak_mib": 1.2305,
+          "peak_working_set": 3223552,
+          "cycles": 8496,
+          "idle_seconds": 2.0,
+          "idle_engine_cpu_seconds": 0.0
+        },
+        {
+          "run": 43430495805,
+          "seconds": 30,
+          "job_peak_process_memory_used": 1232896,
+          "job_peak_mib": 1.1758,
+          "peak_working_set": 3244032,
+          "cycles": 4287,
+          "idle_seconds": 2.0,
+          "idle_engine_cpu_seconds": 0.0
+        }
+      ],
+      "host_cost_us_accept_decompose": {
+        "read status": [
+          340.5,
+          376.6,
+          721.9,
+          290.6
+        ],
+        "read status and show ledger": [
+          399.0,
+          442.5,
+          214.3,
+          613.0
+        ]
+      },
+      "cycle_round_trip_ms_read_status_run_43430495805": 0.667,
+      "full_regression": {
+        "commit": "2e90677",
+        "PASS": 6790,
+        "FAIL": 41,
+        "ERROR": 40,
+        "SKIP": 17,
+        "new_regressions": 0,
+        "missing": 0,
+        "designated_core": "191/191",
+        "runs": 1,
+        "window_utc": "2026-11-13T12:24:31Z to 2026-11-13T13:00:58Z",
+        "result_sha256": "5e9ac988b6d0f624b511c3f2d05cbfb0de5ce90e3d814c1a7683815e69542699"
+      },
+      "contract_headers": {
+        "c_seed_curriculum.h": {
+          "git_blob": "427a5d0ac64aef0e1231c79a56cadda3dced2cda",
+          "bytes": 40697,
+          "sha256": "34f9fa17ecc91138ddcf6a1a514cea32f8e5a7e3e1aa6e984ea908e581528082"
+        },
+        "c_seed_si_commander.h": {
+          "git_blob": "9bc93da177d4b596465c303f7199fd40afd46c5e",
+          "bytes": 60566,
+          "sha256": "e21926084d017fe128e8b11b3df039d08181e5085c2859e1f583efaee1b671ad"
+        }
+      }
+    },
+    "soak_note": "the same binary varies by tens of thousands of bytes between runs (86,016 B over the four v1.8.2 samples, 57,344 B over the four v1.8.3 samples); all eight are below 1,310,720 B, one by 4,096 B",
+    "compound_command_gate": {
+      "real_engine_ci_run_43430495805": {
+        "read status and format c:": "OWNER_WAIT, 0 cycles served; clause 2 'format c:' risk 3 (VERB_UNKNOWN, RADAR, STRUCTURE, RISK_3)",
+        "check and wipe disk": "OWNER_WAIT, 0 cycles served; clause 2 'wipe disk' risk 3 (RADAR, RISK_3)",
+        "show everything then erase disk": "OWNER_WAIT, 0 cycles served; clause 2 'erase disk' risk 3 (RADAR, RISK_3)",
+        "read status format c:": "OWNER_WAIT, 0 cycles served; one clause, risk 3 (RADAR, STRUCTURE, RISK_3)",
+        "read status and show ledger": "REPORTED, 1 cycle, 28 frames, first difference 0"
+      },
+      "builder_corpus": {
+        "dangerous_compounds": 2304,
+        "passed_without_owner_by_the_v1.8.1_first_verb_rule": 1767,
+        "passed_without_owner_by_v1.8.2_and_later": 0,
+        "note": "the builder's own corpus (16 dangerous clauses x 16 connectives x positions); not a sample of real commands"
+      },
+      "radar": {
+        "tokens": 30,
+        "patterns": 9,
+        "drive_designator": 1
+      },
+      "bounds": {
+        "clauses_kept": 8,
+        "clause_bytes": 128,
+        "over_the_bound": "judged in full, needs the Owner"
+      }
+    },
+    "registered_character_set": {
+      "set": [
+        "U+AC00..U+D7A3",
+        "U+0020..U+007E",
+        "U+0009",
+        "U+000A",
+        "U+000D"
+      ],
+      "result_outside_the_set": "state REFUSED, error PARSE; no frame but BYE; no Owner subject; a token is not consumed",
+      "examples": {
+        "for<U+200B>mat c:": "refused, U+200B at byte 3 (v1.8.2: Owner wait)",
+        "fullwidth format": "refused, U+FF46 (v1.8.2: Owner wait)",
+        "Cyrillic a inside status": "refused, U+0430 (v1.8.2: Owner wait)",
+        "vertical tab inside a command": "refused, U+000B (v1.8.2: passed)",
+        "invalid UTF-8": "refused (v1.8.2: Owner wait)",
+        "Hangul command": "accepted, then Owner wait (unchanged)"
+      },
+      "evidence": "CI unit tests over the real engine for two inputs (0 cycles served, only BYE sent); the token non-consumption test runs over the in-process engine double; no CLI transcript was captured"
+    },
+    "seventh_judgment_defects_addressed": {
+      "4_compound_commands": "v1.8.2",
+      "6_owner_signs_unseen": "partly: the waiting evidence lists every clause; the subject string is unchanged",
+      "7_protection_list": "partly: two meta sector files added; aliases unchanged",
+      "1_2_3_5_8_9_10": "not changed"
+    }
+  },
+  "legacy": {
+    "repository": "CSY8515/Ultra-Brain-Legacy",
+    "release": "v1.68",
+    "release_url": "https://github.com/CSY8515/Ultra-Brain-Legacy/releases/tag/v1.68",
+    "tag_commit": "5f748416c9cabf9faa75d53f074ff100a4bd3fc1",
+    "ci": {
+      "tag_run": 43423157347,
+      "main_run": 43423001643,
+      "verification_branch_run": 43422786855,
+      "conclusion": "success (3/3)",
+      "runner": "26/26, 19 flags exit 0",
+      "mesh": "33/33",
+      "clang": {
+        "version": "20.1.8",
+        "warnings": 0,
+        "runner_bytes": 280064,
+        "mesh_bytes": 276480
+      },
+      "msvc": {
+        "flags": "/utf-8 /W4 /WX",
+        "warnings": 0
+      }
+    },
+    "mounted_headers_from_main": "v1.8.2",
+    "mounted_blobs": {
+      "c_seed_curriculum.h": "e740f309ff69bb6a5d3472e25c837feda1f07d56",
+      "c_seed_si_commander.h": "d92aec5805bc8ee49ccc54bd167acf8a6f19750c"
+    },
+    "rule_97": "enacted in v1.68 (invariant 85); the title is the Owner's, the clauses were written by the technical lead",
+    "not_mounted": "the v1.8.3 headers; re-mount is on hold by Owner decision. Section 35.6 of the v1.68 specification still says the rule is not implemented in MAIN"
+  },
+  "labs": {
+    "repository": "CSY8515/Ultra-Brain-Labs",
+    "release": "v1.1.0",
+    "state": "unchanged"
+  },
+  "owner_directive_wording_corrected": [
+    "265/265 is the CI unit-test count; the full regression has 81 historical exemptions, so nothing is 'ALL PASS' overall",
+    "'0 new defects' is '0 new regressions against the baseline'",
+    "1,232,896 B is 1.1758 MiB (1.18 rounded), one of four v1.8.3 samples; the largest is 1,290,240 B (1.23 MiB)",
+    "228,057 is the number of property checks run on the pre-implementation design prototype, not on the v1.8.2 product",
+    "'30 destructive radar' is 30 tokens plus 9 patterns plus a drive designator; the list is incomplete by nature",
+    "the 7th judgment's Unicode-space finding is about the R0 prover, which v1.8.3 does not change; fullwidth and zero-width characters at the command entrance were not on the 7th judgment's defect list",
+    "the Showcase repository has no CI; the CI that was confirmed is MAIN's and Legacy's"
+  ],
+  "not_measured": [
+    "warm engine round trip of v1.8.3",
+    "cost of the registered-set check alone",
+    "false-positive rate on real use",
+    "local execution (Smart App Control)"
+  ],
+  "evaluation": {
+    "document": "EVALUATION_STAGE8_V183.md",
+    "judge": "Claude Opus 5.5 (independent run)",
+    "builder": "Claude Fable 5.2"
+  }
+}
