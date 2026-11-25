@@ -1,5 +1,20 @@
 # Changelog
 
+## v1.2.4 — 2026-11-25
+
+Measured scorecard, adversarial review by three AI models and a 1,732-case stress test of the private main repository at commit `083af88`, with the four defects it found fixed in commit `2d08614`.
+
+- `REVIEW_SCORECARD_2026-11-25.md`: Korean and English, with a table of terms.
+  - Measurements: the Owner's one identity check; full regression PASS 6,792 / FAIL 39 / ERROR 40 / SKIP 17 with 0 new regressions on the final commit (PASS 6,792 / FAIL 39 / ERROR 40 / SKIP 17 with 0 new regressions on the measured commit); command round trip median 0.205 ms; C-only pipe meter upper medians 16.5 – 26.3 µs.
+  - Attack: Claude Opus 5.5 (23 attacks: 0 breached, 8 partial, 15 blocked), Claude Sonnet 5.5 (not run: stopped by its safety classifier before it started; the request was not sent again with different wording), Claude Fable 5.2 (12 attacks: 3 breached, 4 partial, 5 blocked; the three breaches are one defect).
+  - Four defects and their fixes, judged in three design rounds and in the implementation rounds.
+  - Stress: 1,732 cases with 0 crash, 0 lost acknowledged receipt and 0 lock left behind; 21 vaccine tests; the Demo classification measured by import relations; the four release gates; the recorded residual risks.
+- `evidence/08-2026-11-25-measured-review.json`: the figures, machine readable, with the SHA-256 of every measurement command.
+- `SHA256SUMS_v1.2.4.txt`: the SHA-256 of the six files of this release (scorecard, release notes, evidence JSON, README, CHANGELOG, VERSION); the list does not contain its own hash.
+- `README.md`: section #8; the repository table now names the two private repositories without links.
+- Not run: the second-tier (assume-breach) attack; core DLL throughput (Smart App Control). No remote CI run was started.
+- No source code of the private repositories is published. Nothing here is a certification, and the attacks and judgments are by AI models, not by people or an outside organisation.
+
 ## v1.2.3 — 2026-11-14
 
 Closed-lexicon gate (Ultra Brain v1.8.4), Legacy v1.69 and the 9th adversarial judgment with a second independent review.
