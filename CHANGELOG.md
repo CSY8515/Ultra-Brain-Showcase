@@ -1,5 +1,20 @@
 # Changelog
 
+## v1.2.5 — 2026-11-26
+
+New attack variables against the guard kernel of the private main repository, a joint chain attack by three AI models and 2,264 combined cases, measured at commit `553d82b`, with the defects fixed in commits `08da2c5`, `cb0cefa` and `9aea59e`.
+
+- `REVIEW_SCORECARD_2026-11-26.md`: Korean and English, with a table of terms.
+  - Attack variables: Claude Opus 5.5 19, Claude Sonnet 5.5 116, Claude Fable 5.2 14, the builder 9; the four-step joint chain passed on the baseline commit and stops at its first step on the final commit.
+  - Combined cases: 2,264 with 0 duplicate ids; misses 590 and false positives 5 on the baseline commit, misses 54 and false positives 3 on the final commit; 0 crash, 0 lost receipt and 0 lock left behind on both.
+  - Judgments: 8 design rounds and 6 implementation rounds, ending at 0 blocking findings from each of the three judging models.
+  - Measurements on the final commit: full regression PASS 6,792 / FAIL 39 / ERROR 40 / SKIP 17 with 0 new regressions; native test directory 1,167 run, OK; guard judgment median 0.016 ms against a 0.4 ms budget.
+- `evidence/09-2026-11-26-joint-chain.json`: the figures, machine readable.
+- `SHA256SUMS_v1.2.5.txt`: the SHA-256 of the six files of this release (scorecard, release notes, evidence JSON, README, CHANGELOG, VERSION); the list does not contain its own hash.
+- `README.md`: section #9; the repository table names the commits of this release.
+- Not fixed: two items that need the Owner's decision. Not run: production data, remote CI, long-duration operation. No remote CI run was started.
+- No source code of the private repositories is published. Nothing here is a certification, and the attacks and judgments are by AI models, not by people or an outside organisation.
+
 ## v1.2.4 — 2026-11-25
 
 Measured scorecard, adversarial review by three AI models and a 1,732-case stress test of the private main repository at commit `083af88`, with the four defects it found fixed in commit `2d08614`.
