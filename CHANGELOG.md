@@ -1,5 +1,20 @@
 # Changelog
 
+## v1.2.6 — 2026-11-27
+
+The Owner's decision on the two items v1.2.5 left open. Measured on commit `b41c685` of the private main repository, whose base is commit `9aea59e`. The ledger is archived in the private specification repository at commit `387cc2f`.
+
+- `RELEASE_NOTES_v1.2.6.md`: English, with a Korean summary.
+  - Alternate data stream check: implemented. The Owner's condition (a dedicated, minimum-privilege, read-only interface) passed in a narrower form than first offered. The two hidden-stream attacks of v1.2.5 are now held for judgment.
+  - Keyed witness: stopped before implementation. A key protected for the current user opened in a second process of the same user in 2.25 ms with no prompt, and a key that stops a forgery needs the Owner's Windows Hello on every write. The Owner has three options.
+  - Judgments: three implementation rounds, ending at 0 blocking findings from each of the three judging models.
+  - Measurements: full regression PASS 6,792 / FAIL 39 / ERROR 40 / SKIP 17 with 0 new regressions (the first run on the same commit had 1 error in a connection-worker test that does not use the guard code; both runs kept); native test directory 1,182 run, OK; 2,264 combined cases identical to v1.2.5 case by case; guard judgment median 0.0153 ms against a 0.4 ms budget.
+- `evidence/10-2026-11-27-owner-decision.json`: the figures, machine readable.
+- `SHA256SUMS_v1.2.6.txt`: the SHA-256 of the five files of this release (release notes, evidence JSON, README, CHANGELOG, VERSION); the list does not contain its own hash.
+- `README.md`: section #10; the repository table names the commits of this release.
+- Not run: production data, remote CI, long-duration operation. No remote CI run was started.
+- No source code of the private repositories is published. Nothing here is a certification, and the attacks and judgments are by AI models, not by people or an outside organisation.
+
 ## v1.2.5 — 2026-11-26
 
 New attack variables against the guard kernel of the private main repository, a joint chain attack by three AI models and 2,264 combined cases, measured at commit `553d82b`, with the defects fixed in commits `08da2c5`, `cb0cefa` and `9aea59e`.

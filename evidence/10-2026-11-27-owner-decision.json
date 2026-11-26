@@ -1,0 +1,19 @@
+{
+ "schema": "ub-showcase-evidence/10",
+ "glossary": {"main repository": "the private repository Ultra-Brain (product source)", "specification repository": "the private repository Ultra-Brain-Legacy (specifications and judgment records)", "Owner": "the individual user who makes the final decisions for this project", "guard kernel": "the main repository's own check layer that judges each development act", "held for judgment": "the act is not accepted and no penalty is applied; the actor may undo the cause and the hold lifts"},
+ "release": "Ultra-Brain-Showcase v1.2.6",
+ "base_commit": "9aea59e",
+ "final_commit": "b41c685",
+ "specification_archive_commit": "387cc2f",
+ "owner_decision": {"alternate_data_streams": {"condition": "a dedicated, minimum-privilege, read-only interface; no new way to start a program or reach a path outside the repository", "result": "passed in a narrower form: three allowed lines, one system function each, rebuilt from its address; a test finds no library object reachable", "implemented": true}, "keyed_witness": {"condition": "report before building if every use needs the Owner's Windows Hello", "result": "stopped before implementation", "measured": "a key protected for the current user was opened by a second process of the same user in 2.25 ms with no prompt", "owner_options": ["Hello on every guard write", "signed checkpoints only at acts that already ask for Hello, residue after the last one stated", "a witness held by another account"], "implemented": false}},
+ "judgment_rounds": {"implementation_1": {"opus": 2, "sonnet": 2, "fable": 4, "causes": 4}, "implementation_2": {"opus": 0, "sonnet": 0, "fable": 1}, "implementation_3": {"opus": 0, "sonnet": 0, "fable": 0}},
+ "full_regression": {"final": {"counts": {"PASS": 6792, "FAIL": 39, "SKIP": 17, "ERROR": 40}, "designated_core": {"total": 191, "passed": 191}, "new_regressions": 0, "missing": 0, "statuses_identical_to_v125_final_by_test": true}, "first_run": {"counts": {"PASS": 6791, "FAIL": 39, "SKIP": 17, "ERROR": 41}, "designated_core": {"total": 191, "passed": 191}, "new_regressions": 1, "note": "one connection-worker test errored; it does not use the guard code and passed 5 of 5 runs alone; both runs kept"}},
+ "native_test_directory": {"run": 1182, "result": "OK", "skipped": 20, "v125": 1167},
+ "combined_cases": {"cases": 2264, "identical_to_v125_by_case": true, "misses": 54, "false_positives": 3, "crash": 0, "lost_receipt": 0, "lock_left_behind": 0},
+ "joint_chain": {"rows": 235, "misses": [51, 49], "false_positives": [4, 4], "changed_rows": ["hidden stream on a file: missed -> held", "hidden stream on a folder: missed -> held"]},
+ "bench": {"guard_judgment_ms": {"n": 100000, "median": 0.0153, "p99": 0.039, "budget": 0.4, "v125_median": 0.016}, "full_measurement_seconds": {"runs": [2.5, 2.15, 2.36, 2.55, 2.21], "median": 2.36, "v125_median": 1.59, "signals_on_clean_copy": 0}},
+ "not_run": ["production data", "remote CI", "long-duration operation"],
+ "limits": ["the keyed witness is not built; its misses remain", "files inside the git folder's subfolders, ignored non-code files and items below skipped tool folders are not read for streams", "NTFS extended attributes", "a stream added and removed within one act", "a folder swapped for a link between the check and the read", "a well-formed download mark can carry up to 4 KiB of text for one minor anomaly"],
+ "remote_ci_runs_started": 0,
+ "not_a_certification": true
+}
