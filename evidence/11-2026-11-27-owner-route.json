@@ -1,0 +1,23 @@
+{
+ "schema": "ub-showcase-evidence/11",
+ "glossary": {"main repository": "the private repository Ultra-Brain (product source)", "specification repository": "the private repository Ultra-Brain-Legacy (specifications and judgment records)", "Owner": "the individual user who makes the final decisions for this project", "guard kernel": "the main repository's own check layer that judges each development act", "keyed witness": "a signature that the same user cannot forge", "Owner act": "an act only the Owner may make: create the guard, lift a seal, lift a lock, resolve a judgment hold, switch the adversarial audit off, recover"},
+ "release": "Ultra-Brain-Showcase v1.2.7",
+ "base_commit": "b41c685",
+ "code_commits": ["5291823", "8262adb"],
+ "final_commit": "8262adb",
+ "specification_archive_commit": "82b948b",
+ "decision_path": ["checkpoints at acts that already ask for Windows Hello: stopped before implementation (the guard had no such act)", "bind the guard's Owner route to Windows Hello: reported before implementation that the three same-user rewrites stay open", "the Owner's answer: proceed anyway"],
+ "built": {"gesture_per_owner_act": 1, "signed": "the repository, the act, the line number and the hash of the position the act follows", "public_key_source": "the Windows Hello container, every time", "refused": ["an Owner line without a valid signature", "a chain that does not start with a signed creation or recovery"], "gesture_taken": "before the writer lock, only when the act would proceed"},
+ "owner_live_check": {"key_created": "SUCCESS", "rsa_bits": 2048, "test_signature_signed": true, "test_signature_verified": true},
+ "judgment_rounds": {"implementation_1": {"opus": 3, "sonnet": 1, "fable": 2, "causes": 4}, "implementation_2": {"opus": 0, "sonnet": 0, "fable": 0}, "implementation_3": {"opus": 0, "sonnet": 0, "fable": 0}, "implementation_4": {"opus": 0, "sonnet": 0, "fable": 0}},
+ "full_regression": {"runs": [{"commit": "5291823", "counts": {"PASS": 6792, "FAIL": 39, "SKIP": 17, "ERROR": 40}, "designated_core": {"total": 191, "passed": 191}, "new_regressions": 0}, {"commit": "8262adb", "counts": {"PASS": 6792, "FAIL": 39, "SKIP": 17, "ERROR": 40}, "designated_core": {"total": 191, "passed": 191}, "new_regressions": 0}], "statuses_identical_to_v126_by_test": true},
+ "native_test_directory": {"run": 1208, "result": "OK", "skipped": 20, "v126": 1182},
+ "combined_cases": {"cases": 2264, "identical_to_v126_by_case": true, "crash": 0, "lost_receipt": 0, "lock_left_behind": 0},
+ "joint_chain": {"rows": 235, "misses": 49, "false_positives": 4, "identical_to_v126": true},
+ "bench": {"guard_judgment_ms": {"n": 100000, "median": 0.0157, "p99": 0.0443, "budget": 0.4}, "native_engine_round_trip": "not run: Windows Smart App Control blocked this build's engine image; a second image of the same source is not tried again"},
+ "kernel_self_audit": {"changed_files": 7, "hard_faults": 0, "register_caught_new_files": 2, "flag_acted_on": "the new test file was not plain (code at import, one skip); changed in 8262adb; the final audit no longer flags it"},
+ "limits": ["a forged tail after the last Owner line", "a rollback to any earlier signed point, the creation point and signatures that outlived a recovery included", "an emptied quarantine", "an Owner line's own content is not signed", "the Windows Hello dialog does not show what is signed", "a signature made for an act the guard then refused remains valid at its position (it can be reused there)"],
+ "not_run": ["whether Cancel closes the prompt", "whether deleting the key asks a gesture", "production data", "remote CI", "long-duration operation"],
+ "remote_ci_runs_started": 0,
+ "not_a_certification": true
+}

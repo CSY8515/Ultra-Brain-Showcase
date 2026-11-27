@@ -1,5 +1,21 @@
 # Changelog
 
+## v1.2.7 — 2026-11-27
+
+The guard's Owner acts bound to a Windows Hello key: the Owner's decision on the item v1.2.6 left open. Measured on commits `5291823` and `8262adb` (final) of the private main repository, whose base is commit `b41c685`. The ledger is archived in the private specification repository at commit `82b948b`.
+
+- `RELEASE_NOTES_v1.2.7.md`: English, with a Korean summary.
+  - Two safety checks were made before any code and reported to the Owner: the first option would have made zero checkpoints, and the second does not close the three same-user rewrites. The Owner chose to proceed.
+  - Built: one Windows Hello gesture per Owner act signs the position the act follows; an unsigned Owner line, or a chain that does not start with a signed creation or recovery, is refused.
+  - Live check by the Owner: key created (RSA 2048), test signature verified.
+  - Judgments: round 1 3 / 1 / 2, rounds 2 to 4 0 / 0 / 0.
+  - Measurements: full regression PASS 6,792 / FAIL 39 / ERROR 40 / SKIP 17 with 0 new regressions on both commits; native test directory 1,208 run, OK (20 skipped); v1.2.6 had 1,182; 2,264 combined cases and the joint chain identical to v1.2.6; guard judgment median 0.0157 ms against a 0.4 ms budget. One engine benchmark was not run (Windows Smart App Control blocked this build's image).
+- `evidence/11-2026-11-27-owner-route.json`: the figures, machine readable.
+- `SHA256SUMS_v1.2.7.txt`: the SHA-256 of the five files of this release (release notes, evidence JSON, README, CHANGELOG, VERSION); the list does not contain its own hash.
+- `README.md`: section #11; the repository table names the commits of this release.
+- Not run: production data, remote CI, long-duration operation. No remote CI run was started.
+- No source code of the private repositories is published. Nothing here is a certification, and the attacks and judgments are by AI models, not by people or an outside organisation.
+
 ## v1.2.6 — 2026-11-27
 
 The Owner's decision on the two items v1.2.5 left open. Measured on commit `b41c685` of the private main repository, whose base is commit `9aea59e`. The ledger is archived in the private specification repository at commit `387cc2f`.
