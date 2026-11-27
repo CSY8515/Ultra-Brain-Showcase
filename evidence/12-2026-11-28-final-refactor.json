@@ -1,0 +1,23 @@
+{
+ "schema": "ub-showcase-evidence/12",
+ "glossary": {"main repository": "the private repository Ultra-Brain (product source)", "specification repository": "the private repository Ultra-Brain-Legacy (specifications and judgment records)", "Owner": "the individual user who makes the final decisions for this project", "guard": "the main repository's own check layer that judges each development act", "command log reader": "the part of the guard that reads which shell and git commands an act ran", "seal": "a guard state that only the Owner may lift", "Green": "the guard's verdict level for an act with no risk signal; such an act passes", "slot": "a required field of an act, such as its target or its reason", "designated core": "a fixed set of 191 tests inside the full regression that must all pass", "native test directory": "the main repository's own unit tests of its native and guard layer, not among the 6,888"},
+ "builder": "Claude Opus 5.5 (technical lead); the Opus judgments are not independent of the author",
+ "release": "Ultra-Brain-Showcase v1.2.8",
+ "base_commit": "8262adb",
+ "final_commit": "1dca8a0",
+ "specification_commits": ["cae009c", "9048770"],
+ "judgment_rounds": {"design_1": {"opus": 4, "sonnet": 6, "fable": 4}, "design_2": {"opus": 6, "sonnet": 3, "fable": 6}, "design_3": {"opus": 0, "sonnet": 0, "fable": 1}, "design_3b": {"fable": 0}, "implementation_1": {"opus": 1, "sonnet": 0, "fable": 0}, "implementation_1b": {"opus": 0}},
+ "stopped": {"what": "the rewrite of the command log reader", "rule": "a step that fails twice in a row is stopped and recorded", "round_2_findings_on_it": 14, "round_2_findings_total": 15, "new_defects_made_by_the_draft": 5, "existing_reader": "unchanged; the judges' gaps stay open, recorded privately with reproductions"},
+ "landed": ["Green judgment: plain ASCII slot text answered without per-character Unicode lookups, the same answers", "slot texts must be plain text values (a crafted text object passed an empty target and reason before)", "three internal definitions nothing read were removed; unused public names were kept by the repository's rule"],
+ "equivalence_checked_texts": {"ascii_length_0_to_3": 2113665, "class_alphabet_length_4_to_5": 21218430, "mixed": 300000, "decorated": 19208, "differences": 0},
+ "bench": {"guard_judgment_ms": {"n": 100000, "median": 0.0059, "p99": 0.0154, "budget": 0.4, "v127_median": 0.0157}, "ascii_slot_median_ms": {"before": 0.0158, "after": 0.0061}, "korean_slot_median_ms": {"before": 0.0221, "after": 0.0219}, "native_engine_round_trip": "not run: Windows Smart App Control blocked this build's engine image; a second image of the same source is not tried again"},
+ "full_regression": {"runs": [{"run": 1, "counts": {"PASS": 6791, "FAIL": 39, "ERROR": 41, "SKIP": 17}, "designated_core": {"total": 191, "passed": 191}, "note": "one known race of the harness's own process-kill guard; the test passed 3 of 3 alone"}, {"run": 2, "counts": {"PASS": 6792, "FAIL": 39, "SKIP": 17, "ERROR": 40}, "designated_core": {"total": 191, "passed": 191}, "new_regressions": 0, "statuses_identical_to_v127_by_test": true}]},
+ "native_test_directory": {"run": 1212, "result": "OK", "skipped": 23, "v127": {"run": 1208, "skipped": 20}, "skips_listed": 21, "skip_reasons": {"Smart App Control": 19, "symbolic link privilege": 1, "no specification checkout named": 1}},
+ "combined_cases": {"cases": 2264, "identical_to_v127_by_case": true},
+ "joint_chain": {"rows": 235, "same_verdicts_as_v127": true},
+ "disk": {"on_disk_before": 7933132800, "on_disk_after": 5972267008, "percent_less": 24.7, "logical_before": 7644866253, "logical_after": 7843552351, "history": {"objects_before": 7708, "objects_after": 7708, "objects_lost": 0, "bytes_before": 78108664, "bytes_after": 70169322, "byte_copy_compared": true}, "compression": {"files": 28086, "hashed_before_and_after": 28086, "on_disk_before": 2603704320, "on_disk_after": 440426496, "content_or_times_changed": 0, "folders_marked": 0, "other_files_compressed": 0, "folders_not_listed": 8}, "deleted": "two folders of Python byte-code caches only", "builder_breach": "the builder's early size measurement read sensitive-looking files and recorded size and SHA-256 only (no content printed or sent); deleting that record is an Owner decision"},
+ "left_to_the_owner": 5,
+ "not_run": ["full YAML parse of the CI workflow", "remote CI", "production data", "long-duration operation"],
+ "remote_ci_runs_started": 0,
+ "not_a_certification": true
+}

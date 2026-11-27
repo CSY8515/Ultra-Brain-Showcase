@@ -1,5 +1,21 @@
 # Changelog
 
+## v1.2.8 — 2026-11-28
+
+The final Part 1 refactor, judged step by step by three AI models. Measured on commit `1dca8a0` of the private main repository, whose base is commit `8262adb`. The design record is in the private specification repository at commit `cae009c` (written before the main repository was changed) and the measurements at commit `9048770`.
+
+- `RELEASE_NOTES_v1.2.8.md`: English, with a Korean summary.
+  - Stopped by the Owner's rule (a step that fails twice in a row is stopped): the rewrite of the command log reader. The existing reader is unchanged and the gaps the judges found in it stay open, recorded privately.
+  - Changed: a faster Green judgment for plain ASCII text with the same answers, slot texts must be plain text values, three unused internal definitions removed.
+  - Judgments (Opus / Sonnet / Fable): design rounds 4 / 6 / 4, 6 / 3 / 6, 0 / 0 / 1 then 0; implementation 1 / 0 / 0 then 0. The author is Claude Opus 5.5, so the Opus judgments are not independent of it.
+  - Measurements: guard judgment median 0.0157 ms to 0.0059 ms for ASCII slot text (Korean slot text unchanged within noise); full regression run 2 PASS 6,792 / FAIL 39 / ERROR 40 / SKIP 17 with 0 new regressions; native test directory 1,212 run, OK (23 skipped); combined cases and the joint chain the same as v1.2.7.
+  - Disk of the main repository 7.93 GB to 5.97 GB: history repacked with nothing lost, an allow-list compressed transparently with every file hashed before and after, no record deleted. The builder's early size measurement read sensitive-looking files and recorded their size and SHA-256 only, against the project's rule; deleting that record is an Owner decision.
+- `evidence/12-2026-11-28-final-refactor.json`: the figures, machine readable.
+- `SHA256SUMS_v1.2.8.txt`: the SHA-256 of the five files of this release (release notes, evidence JSON, README, CHANGELOG, VERSION); the list does not contain its own hash.
+- `README.md`: section #12; the repository table names the commits of this release.
+- Not run: the full YAML parse of the CI workflow, production data, remote CI, long-duration operation. No remote CI run was started.
+- No source code of the private repositories is published. Nothing here is a certification, and the judgments are by AI models, not by people or an outside organisation.
+
 ## v1.2.7 — 2026-11-27
 
 The guard's Owner acts bound to a Windows Hello key: the Owner's decision on the item v1.2.6 left open. Measured on commits `5291823` and `8262adb` (final) of the private main repository, whose base is commit `b41c685`. The ledger is archived in the private specification repository at commit `82b948b`.
